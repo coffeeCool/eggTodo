@@ -1,9 +1,11 @@
 module.exports = (app) ->
 
   class TopicService extends app.Service
+
     constructor: (ctx) ->
-      super(ctx)
+      super ctx
       @root = 'https://cnodejs.org/api/v1'
+      @
 
     request: (url, opts) ->
       url = "#{@root}#{url}"
@@ -17,9 +19,9 @@ module.exports = (app) ->
     show: (params) ->
       result = await @request "/topic/#{params.id}"
       ,
-      data:
-        mdrender: params.mdrender
-        accesstoken: params.accesstoken
+        data:
+          mdrender: params.mdrender
+          accesstoken: params.accesstoken
       @checkSuccess result
 
       result.data.data
@@ -27,7 +29,7 @@ module.exports = (app) ->
     list: (params) ->
       result = await @request "/topics"
       ,
-      data:params
+        data: params
 
       @checkSuccess result
       result.data.data
@@ -35,9 +37,9 @@ module.exports = (app) ->
     create: (params) ->
       result = await @request "/topics"
       ,
-      method: 'post'
-      data: params
-      contentType: 'json'
+        method: 'post'
+        data: params
+        contentType: 'json'
 
       @checkSuccess result
       result.data.topic_id
@@ -45,9 +47,9 @@ module.exports = (app) ->
     update: (params) ->
       result = await @request "/topics/update"
       ,
-      method: 'post'
-      data: params
-      contentType: 'json'
+        method: 'post'
+        data: params
+        contentType: 'json'
 
       @checkSuccess result
 
@@ -62,5 +64,5 @@ module.exports = (app) ->
         , 'remote response error'
         , data: result.data
 
-  TopicService
+  return TopicService
 

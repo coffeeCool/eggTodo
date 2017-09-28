@@ -1,19 +1,23 @@
 module.exports = (app) ->
-  class TopicsController extends app.Controller
-    constructor: (ctx) ->
-     super ctx
 
-     @createRule =
-      accesstoken: 'string'
-      title: 'string'
-      tab: 
-        type: 'enum'
-        values: [ 'ask', 'share', 'job' ]
-        required: false 
-      content: 'string'
+  class TopicsController extends app.Controller
+
+    constructor: (ctx) ->
+      super ctx
+
+      @createRule =
+        accesstoken: 'string'
+        title: 'string'
+        tab: 
+          type: 'enum'
+          values: [ 'ask', 'share', 'job' ]
+          required: false 
+        content: 'string'
+
+      @
 
     show: ->
-      {ctx} = @
+      { ctx } = @
 
       ctx.body = await ctx.service.topics.show
         id: ctx.params.id
@@ -21,7 +25,7 @@ module.exports = (app) ->
         accesstoken: ctx.query.accesstoken or ''
 
     index: ->
-      {ctx} = @
+      { ctx } = @
 
       ctx.validate
         page:
@@ -43,7 +47,7 @@ module.exports = (app) ->
         mdrender: ctx.query.mdrender isnt 'false'
 
     create: ->
-      {ctx} = @
+      { ctx } = @
       ctx.validate @createRule
 
       id = await ctx.service.topics.create ctx.request.body
@@ -52,7 +56,7 @@ module.exports = (app) ->
       ctx.status = 201
 
     update: ->
-      {ctx} = @
+      { ctx } = @
       id = ctx.params.id
 
       ctx.validate @createRule
