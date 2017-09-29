@@ -1,10 +1,13 @@
+import utils from '../config/config.default.coffee'
+
 module.exports = (app) ->
 
   class LoginService extends app.Service
 
     constructor: (ctx) ->
       super ctx
-      @root = 'https://ijydih2t.api.lncld.net/1.1'
+      # @root = 'https://ijydih2t.api.lncld.net/1.1'
+      @root = utils.source.leanCloud.uri
       @
 
     request: (url, opts) ->
@@ -12,10 +15,11 @@ module.exports = (app) ->
       opts = {
         timeout: ['30s', '30s']
         dataType: 'json'
-        headers: 
-          'Content-Type': 'application/json'
-          'X-LC-Id': '' # leanCloud账户应用的 id
-          'X-LC-Key': '' # leanCloud账户应用的 key
+        headers: utils.source.leanCloud.headers
+        # headers: 
+        #   'Content-Type': 'application/json'
+        #   'X-LC-Id': '' # leanCloud账户应用的 id
+        #   'X-LC-Key': '' # leanCloud账户应用的 key
         opts...
       }
       await @ctx.curl url, opts
