@@ -1,3 +1,3 @@
 #!/usr/bin/env coffee
 require 'coffee-require/register'
-require './test.coffee'
+require './tasks.coffee'

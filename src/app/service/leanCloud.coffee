@@ -6,39 +6,83 @@ module.exports = (app) ->
 
     constructor: (ctx) ->
       super ctx
-      # @root = 'https://ijydih2t.api.lncld.net/1.1'
       @root = utils.source.leanCloud.uri
       @
 
     request: (url, opts) ->
       url = "#{@root}#{url}"
+      
       opts = {
-        timeout: ['30s', '30s']
-        dataType: 'json'
-        headers: utils.source.leanCloud.headers
-        # headers: 
-        #   'Content-Type': 'application/json'
-        #   'X-LC-Id': '' # leanCloud账户应用的 id
-        #   'X-LC-Key': '' # leanCloud账户应用的 key
+        headers: {
+          utils.source.leanCloud.headers...
+          (
+            do ->
+              if opts?.headers_extra?
+              then opts.headers_extra
+              else {}
+          )...
+        }
+        
         opts...
       }
       await @ctx.curl url, opts
 
-    login: (params) ->
-
-      result = await @request "/login"
-      ,
-        data: params
-
-      result.data
-
+    # 用户注册
     signup: (params) ->
       
       result = await @request "/users"
       ,
         method: 'post'
         data: params
+        dataType: 'json'
+      
+      result.data
+
+    # 用户登录
+    login: (params) ->
+      
+      result = await @request "/login"
+      ,
+        method: 'post'
+        data: params
+        dataType: 'json'
+        
+      result.data
+
+    # 返回登录用户信息（单个）
+    userInfo: (params) ->
+      
+      result = await @request "/users/me"
+      ,
+        data: params
+        headers_extra:
+          'X-LC-Session': "#{params.sessionToken}"
+      
+      result.data
+    
+    # 重置用户sessionToken
+    refreshSessionToken: (params) ->
+
+      result = await @request "/users/#{params.objectID}/refreshSessionToken"
+      ,
+        method: 'put'
+        data: params
+        headers_extra:
+          'X-LC-Session': "#{params.sessionToken}"
+        dataType: 'json'
+
+      result.data
+
+    # 验证用户邮箱
+    verEmail: (params) ->
+
+      result = await @request "/requestEmailVerify"
+      ,
+        method: 'post'
+        data: params
         contentType: 'json'
       
-      # console.log 'result--->>', result
       result.data
+
+   
+    

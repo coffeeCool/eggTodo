@@ -2,11 +2,12 @@
   "name": "egg-coffeescript-cnodeApiAsync",
   "version": "1.0.0",
   "author": "hewentao <429343576@qq.com>",
-  "description": "基于egg框架的cnode社区API使用Demo",
+  "description": "基于egg框架的CoffeeScript的一些demo",
   "private": true,
   "dependencies": {
     "axios": "^0.16.2",
     "coffeescript": "^2.0.1",
+    "cookie": "^0.3.1",
     "egg": "^1.9.0",
     "egg-bin": "^4.3.3",
     "egg-validate": "^1.0.0",
@@ -15,6 +16,7 @@
   "license": "MIT",
   "devDependencies": {
     "coffee-require": "^0.0.3",
-    "ddeyes": "^0.0.4"
+    "ddeyes": "^0.0.4",
+    "shelljs": "^0.7.8"
   }
 }
