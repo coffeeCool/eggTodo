@@ -48,4 +48,40 @@ module.exports = (app) ->
 
       ctx.body = await ctx.service.leanCloud.verEmail ctx.request.body
 
+    # 请求重置密码
+    resetPassword: ->
+      { ctx } = @
+
+      ctx.body = await ctx.service.leanCloud.resetPassword ctx.request.body
+
+    # 获取用户
+    getUserInfo: ->
+      { ctx } = @
+
+      ctx.body = await ctx.service.leanCloud.getUserInfo ctx.request.query
+
+    # 更新用户
+    updateUserInfo: ->
+      { ctx } = @
+
+      ctx.body = await ctx.service.leanCloud.updateUserInfo ctx.request.body
+
+    # 修改用户密码
+    updateUserPassword: ->
+      { ctx } = @
+
+      ctx.body = await ctx.service.leanCloud.updateUserPassword ctx.request.body
+      
+    # 获取所有用户信息
+    getAllUser: ->
+      { ctx } = @
+
+      ctx.body = await ctx.service.leanCloud.getAllUser ctx.request.query
+
+    # 删除用户
+    deleteUser: ->
+      { ctx } = @
+
+      ctx.body = await ctx.service.leanCloud.deleteUser ctx.request.body
+
   return LeanCloudController

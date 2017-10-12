@@ -73,16 +73,88 @@ module.exports = (app) ->
 
       result.data
 
-    # 验证用户邮箱
+    # 验证用户邮箱 
     verEmail: (params) ->
 
       result = await @request "/requestEmailVerify"
       ,
         method: 'post'
         data: params
-        contentType: 'json'
+        dataType: 'json'
       
       result.data
+
+    # 用户重置密码
+    resetPassword: (params) ->
+
+      result = await @request "/requestPasswordReset"
+      ,
+        method: 'post'
+        data: params
+        dataType: 'json'
+
+      result.data
+
+    # 获取用户
+    getUserInfo: (params) ->
+
+      result = await @request "/users/#{params.objectID}"
+      ,
+        data: params
+        
+      result.data
+
+    # 更新用户 
+    updateUserInfo: (params) ->
+
+      result = await @request "/users/#{params.objectID}"
+      ,
+        method: 'put'
+        data: params
+        headers_extra:
+          'X-LC-Session': "#{params.sessionToken}"
+        dataType: 'json'
+
+      result.data
+
+    # 用户更新密码
+    updateUserPassword: (params) ->
+
+      result = await @request "/users/#{params.objectID}/updatePassword"
+      ,
+        method: 'put'
+        data: params
+        headers_extra:
+          'X-LC-Session': "#{params.sessionToken}"
+        dataType: 'json'
+      
+      result.data
+
+    # 获取所有用户
+    getAllUser: (params) ->
+
+      result = await @request "/users"
+      ,
+        method: 'get'
+        data: params
+        dataType: 'json'
+
+      result.data
+
+    # 删除用户 NO?
+    deleteUser: (params) ->
+      console.log 'params:::',params
+
+      result = await @request "users/#{params.objectID}"
+      ,
+        method: 'delete'
+        data: params
+        headers_extra:
+          'X-LC-Session': "#{params.sessionToken}"
+        dataType: 'json'
+
+      result.data
+
 
    
     

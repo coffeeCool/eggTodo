@@ -1,18 +1,14 @@
 import configSource from '../../../src/app/config/config.default.coffee'
 import axios from 'axios'
 
-export default login = ->
-  axios 
-    method: 'post'  
-    url: configSource.source.leanCloud.uri+'/login'
-    dataType: 'json'
+export default getAllUsers = ->
+  axios
+    url: configSource.source.leanCloud.uri+"/users"
     headers: configSource.source.leanCloud.headers
-    data: {
-      username: '何文涛涛',
-      password: '12345678'
-    }
+    dataType: 'json'
+
   .then (response) ->
     response.data if response.status is 200
-  
+
   .catch (error) ->
     console.log error

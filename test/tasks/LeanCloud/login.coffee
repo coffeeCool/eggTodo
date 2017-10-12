@@ -5,8 +5,7 @@ export default LC_login = ->
   login()
   .then (data) ->
     console.log 'leancloud登录接口顺利返回:::'
-    , data.data
-    data.data
+    , data
 
   .catch (error) ->
     console.log error
