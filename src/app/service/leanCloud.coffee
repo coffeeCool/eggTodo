@@ -63,7 +63,7 @@ module.exports = (app) ->
     # 重置用户sessionToken
     refreshSessionToken: (params) ->
 
-      result = await @request "/users/#{params.objectID}/refreshSessionToken"
+      result = await @request "/users/#{params.objectId}/refreshSessionToken"
       ,
         method: 'put'
         data: params
@@ -98,7 +98,7 @@ module.exports = (app) ->
     # 获取用户
     getUserInfo: (params) ->
 
-      result = await @request "/users/#{params.objectID}"
+      result = await @request "/users/#{params.objectId}"
       ,
         data: params
         
@@ -107,7 +107,7 @@ module.exports = (app) ->
     # 更新用户 
     updateUserInfo: (params) ->
 
-      result = await @request "/users/#{params.objectID}"
+      result = await @request "/users/#{params.objectId}"
       ,
         method: 'put'
         data: params
@@ -120,7 +120,7 @@ module.exports = (app) ->
     # 用户更新密码
     updateUserPassword: (params) ->
 
-      result = await @request "/users/#{params.objectID}/updatePassword"
+      result = await @request "/users/#{params.objectId}/updatePassword"
       ,
         method: 'put'
         data: params
@@ -145,7 +145,7 @@ module.exports = (app) ->
     deleteUser: (params) ->
       console.log 'params:::',params
 
-      result = await @request "users/#{params.objectID}"
+      result = await @request "users/#{params.objectId}"
       ,
         method: 'delete'
         data: params

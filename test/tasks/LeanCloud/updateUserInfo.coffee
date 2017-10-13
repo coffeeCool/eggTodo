@@ -9,7 +9,7 @@ export default LC_updateUserInfo = ->
   .then (data) ->
     updateUserInfo(data)
     .then (result) ->
-      console.log 'leancloud用户更新个人信息接口返回成功::'
+      console.log 'leancloud用户更新个人信息接口返回::'
       ,result
 
   .catch (error) ->

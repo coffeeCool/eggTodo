@@ -9,7 +9,7 @@ export default LC_deleteUser = ->
   .then (data) ->
     deleteUser(data) 
     .then (result) ->
-      console.log 'leancloud删除用户接口顺利返回：：：'
+      console.log 'leancloud删除用户接口返回：：：'
       , result
 
   .catch (error) ->

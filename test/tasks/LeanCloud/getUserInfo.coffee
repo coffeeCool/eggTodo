@@ -9,7 +9,7 @@ export default LC_getUserInfo = ->
   .then (data) ->
     getUserInfo(data)
     .then (result) ->
-      console.log '获取登录成功的单个用户信息返回成功：：'
+      console.log '获取登录成功的单个用户信息返回：：'
       , result
 
   .catch (error) ->

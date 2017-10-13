@@ -3,7 +3,7 @@ import signup from '../../Services/LeanCloud/signup.coffee'
 export default LC_signup = ->
   signup()
   .then (data) ->
-    console.log 'leancloud登录接口顺利返回：：：'
+    console.log 'leancloud登录接口返回：：：'
     , data.data
     data.data
 

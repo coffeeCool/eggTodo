@@ -9,6 +9,7 @@ export default Local_login = ->
       username: '何文涛涛',
       password: '123456'
     }
+
   .then (response) ->
     response.data if response.status is 200
 

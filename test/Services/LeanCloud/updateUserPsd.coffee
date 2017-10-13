@@ -7,7 +7,7 @@ export default updateUserPsd = (params)->
     url: configSource.source.leanCloud.uri+"/users/#{params.objectId}/updatePassword"
     dataType: 'json'
     data: {
-      old_password: "12345678" # 这个地方的旧密码怎么获取到？？
+      old_password: "123456" # 这个地方的旧密码怎么获取到？？
       new_password: '123456'
     }
     headers: {

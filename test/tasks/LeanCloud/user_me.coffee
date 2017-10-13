@@ -10,7 +10,7 @@ export default LC_user_me = ->
   .then (data) ->
     user_me(data)
     .then (result) ->
-      console.log '返回已登录用户信息接口顺利返回：：：'
+      console.log '返回已登录用户信息接口返回：：：'
       , result
   
   .catch (error) ->

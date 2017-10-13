@@ -9,7 +9,7 @@ export default LC_updateUserPsd = ->
   .then (data) ->
     updateUserPsd(data)
     .then (result) ->
-      console.log 'leancloud用户更新密码接口顺利返回：：：'
+      console.log 'leancloud用户更新密码接口返回：：：'
       , result
 
   .catch (error) ->

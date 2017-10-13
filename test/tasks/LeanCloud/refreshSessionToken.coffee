@@ -9,7 +9,7 @@ export default LC_refreshSessionToken = ->
   .then (data) ->
     refreshSessionToken(data)
     .then (result) ->
-      console.log 'leancloud用户重置sessionToken接口顺利返回：：：'
+      console.log 'leancloud用户重置sessionToken接口返回：：：'
       ,result
 
   .catch (error) ->
