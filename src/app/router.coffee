@@ -1,4 +1,5 @@
 module.exports = (app) ->
+  # 以后要使用RESTful api 编写接口文档
   app.resources 'topics', '/api/v2/topics', 'topics'
   app.post '/signup', app.controller.leanCloud.signup # 用户注册
   app.post '/login', app.controller.leanCloud.login # 用户登录
@@ -13,4 +14,7 @@ module.exports = (app) ->
 
   app.get '/getAllUser', app.controller.leanCloud.getAllUser # 获取所有用户信息
   app.delete '/deleteUser', app.controller.leanCloud.deleteUser # 删除用户 ADMIN
+
+
+
   return
