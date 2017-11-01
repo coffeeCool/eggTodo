@@ -1,17 +1,24 @@
 {
-  "name": "egg-coffeescript-cnodeApiAsync",
+  "name": "eggPureFrame",
   "version": "1.0.0",
   "author": "hewentao <429343576@qq.com>",
-  "description": "基于egg框架的CoffeeScript的一些demo",
+  "description": "egg pure frame",
   "private": true,
   "dependencies": {
     "axios": "^0.16.2",
+    "cfx.redux": "^0.0.0",
+    "cfx.redux-actions": "^0.0.0",
+    "cfx.redux-saga": "^0.0.0",
+    "cfx.redux-types": "^0.0.1",
+    "coffee-require": "^0.0.3",
     "coffeescript": "^2.0.1",
     "cookie": "^0.3.1",
     "egg": "^1.9.0",
     "egg-bin": "^4.3.3",
     "egg-validate": "^1.0.0",
-    "supertest": "^3.0.0"
+    "redux-on-state-change": "^1.0.0",
+    "supertest": "^3.0.0",
+    "tape": "^4.8.0"
   },
   "license": "MIT",
   "devDependencies": {

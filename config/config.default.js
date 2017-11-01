@@ -1,6 +1,5 @@
 'use strict';
 
-// require('coffeescript/register');
 require('coffee-require/register');
 
-module.exports = require('../src/config/config.default.coffee');
+module.exports = require('../src/config/config.default');

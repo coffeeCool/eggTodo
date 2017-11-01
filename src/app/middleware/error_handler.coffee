@@ -6,9 +6,9 @@ module.exports = (option, app) ->
       app.emit 'error', err, @
       status = err.status or 500
       error = 
-      if status is 500 and app.config.env is 'prod'
-      then 'Internal Server Error'
-      else err.message
+        if status is 500 and app.config.env is 'prod'
+        then 'Internal Server Error'
+        else err.message
 
       ctx.body ={
         error

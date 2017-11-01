@@ -1,6 +1,6 @@
 module.exports = (appInfo) ->
   config = {}
-  config.keys = appInfo.name + '_1490750627161_5967'
+  config.keys = appInfo.name + 'hewentao' #_1490750627161_5967
   config.middleware = [ 'errorHandler' ]
 
   config.security =
