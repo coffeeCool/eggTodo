@@ -1,0 +1,312 @@
+2017-11-01 17:15:02,628 INFO 27294 [egg:logger] init all loggers with options: {"dir":"/Users/mac/workspace/eggTodo/logs/eggPureFrame","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"eggPureFrame-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":true,"type":"application"}
+2017-11-01 17:15:02,665 INFO 27294 [egg-schedule]: register schedule egg-schedule:/Users/mac/workspace/eggTodo/node_modules/egg-logrotator/app/schedule/clean_log.js
+2017-11-01 17:15:02,665 INFO 27294 [egg-schedule]: register schedule egg-schedule:/Users/mac/workspace/eggTodo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2017-11-01 17:15:02,792 INFO 27294 [egg-static] starting static serve /public/ -> /Users/mac/workspace/eggTodo/app/public
+2017-11-01 17:15:02,795 INFO 27294 [egg-security] use methodnoallow middleware
+2017-11-01 17:15:02,795 INFO 27294 [egg-security] use noopen middleware
+2017-11-01 17:15:02,796 INFO 27294 [egg-security] use nosniff middleware
+2017-11-01 17:15:02,796 INFO 27294 [egg-security] use xssProtection middleware
+2017-11-01 17:15:02,796 INFO 27294 [egg-security] use xframe middleware
+2017-11-01 17:15:02,797 INFO 27294 [egg-security] use dta middleware
+2017-11-01 17:15:02,797 INFO 27294 [egg-security] compose 6 middlewares into one security middleware
+2017-11-01 17:15:02,911 INFO 27294 [egg-watcher:app] watcher start success
+2017-11-01 17:24:34,756 INFO 28336 [egg:logger] init all loggers with options: {"dir":"/Users/mac/workspace/eggTodo/logs/eggPureFrame","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"eggPureFrame-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":true,"type":"application"}
+2017-11-01 17:24:34,791 INFO 28336 [egg-schedule]: register schedule egg-schedule:/Users/mac/workspace/eggTodo/node_modules/egg-logrotator/app/schedule/clean_log.js
+2017-11-01 17:24:34,791 INFO 28336 [egg-schedule]: register schedule egg-schedule:/Users/mac/workspace/eggTodo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2017-11-01 17:24:34,942 INFO 28336 [egg-static] starting static serve /public/ -> /Users/mac/workspace/eggTodo/app/public
+2017-11-01 17:24:34,946 INFO 28336 [egg-security] use methodnoallow middleware
+2017-11-01 17:24:34,946 INFO 28336 [egg-security] use noopen middleware
+2017-11-01 17:24:34,947 INFO 28336 [egg-security] use nosniff middleware
+2017-11-01 17:24:34,947 INFO 28336 [egg-security] use xssProtection middleware
+2017-11-01 17:24:34,947 INFO 28336 [egg-security] use xframe middleware
+2017-11-01 17:24:34,948 INFO 28336 [egg-security] use dta middleware
+2017-11-01 17:24:34,948 INFO 28336 [egg-security] compose 6 middlewares into one security middleware
+2017-11-01 17:24:35,076 INFO 28336 [egg-watcher:app] watcher start success
+2017-11-01 17:28:44,296 INFO 28620 [egg:logger] init all loggers with options: {"dir":"/Users/mac/workspace/eggTodo/logs/eggPureFrame","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"eggPureFrame-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":true,"type":"application"}
+2017-11-01 17:28:44,335 INFO 28620 [egg-schedule]: register schedule egg-schedule:/Users/mac/workspace/eggTodo/node_modules/egg-logrotator/app/schedule/clean_log.js
+2017-11-01 17:28:44,335 INFO 28620 [egg-schedule]: register schedule egg-schedule:/Users/mac/workspace/eggTodo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2017-11-01 17:28:44,490 INFO 28620 [egg-static] starting static serve /public/ -> /Users/mac/workspace/eggTodo/app/public
+2017-11-01 17:28:44,492 INFO 28620 [egg-security] use methodnoallow middleware
+2017-11-01 17:28:44,493 INFO 28620 [egg-security] use noopen middleware
+2017-11-01 17:28:44,493 INFO 28620 [egg-security] use nosniff middleware
+2017-11-01 17:28:44,494 INFO 28620 [egg-security] use xssProtection middleware
+2017-11-01 17:28:44,494 INFO 28620 [egg-security] use xframe middleware
+2017-11-01 17:28:44,494 INFO 28620 [egg-security] use dta middleware
+2017-11-01 17:28:44,494 INFO 28620 [egg-security] compose 6 middlewares into one security middleware
+2017-11-01 17:28:44,633 INFO 28620 [egg-watcher:app] watcher start success
+2017-11-01 17:30:48,567 INFO 28799 [egg:logger] init all loggers with options: {"dir":"/Users/mac/workspace/eggTodo/logs/eggPureFrame","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"eggPureFrame-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":true,"type":"application"}
+2017-11-01 17:30:48,606 INFO 28799 [egg-schedule]: register schedule egg-schedule:/Users/mac/workspace/eggTodo/node_modules/egg-logrotator/app/schedule/clean_log.js
+2017-11-01 17:30:48,606 INFO 28799 [egg-schedule]: register schedule egg-schedule:/Users/mac/workspace/eggTodo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2017-11-01 17:30:48,757 INFO 28799 [egg-static] starting static serve /public/ -> /Users/mac/workspace/eggTodo/app/public
+2017-11-01 17:30:48,761 INFO 28799 [egg-security] use methodnoallow middleware
+2017-11-01 17:30:48,762 INFO 28799 [egg-security] use noopen middleware
+2017-11-01 17:30:48,762 INFO 28799 [egg-security] use nosniff middleware
+2017-11-01 17:30:48,762 INFO 28799 [egg-security] use xssProtection middleware
+2017-11-01 17:30:48,763 INFO 28799 [egg-security] use xframe middleware
+2017-11-01 17:30:48,763 INFO 28799 [egg-security] use dta middleware
+2017-11-01 17:30:48,763 INFO 28799 [egg-security] compose 6 middlewares into one security middleware
+2017-11-01 17:30:48,887 INFO 28799 [egg-watcher:app] watcher start success
+2017-11-01 17:33:47,394 INFO 29046 [egg:logger] init all loggers with options: {"dir":"/Users/mac/workspace/eggTodo/logs/eggPureFrame","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"eggPureFrame-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":true,"type":"application"}
+2017-11-01 17:33:47,426 INFO 29046 [egg-schedule]: register schedule egg-schedule:/Users/mac/workspace/eggTodo/node_modules/egg-logrotator/app/schedule/clean_log.js
+2017-11-01 17:33:47,426 INFO 29046 [egg-schedule]: register schedule egg-schedule:/Users/mac/workspace/eggTodo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2017-11-01 17:33:47,577 INFO 29046 [egg-static] starting static serve /public/ -> /Users/mac/workspace/eggTodo/app/public
+2017-11-01 17:33:47,581 INFO 29046 [egg-security] use methodnoallow middleware
+2017-11-01 17:33:47,582 INFO 29046 [egg-security] use noopen middleware
+2017-11-01 17:33:47,582 INFO 29046 [egg-security] use nosniff middleware
+2017-11-01 17:33:47,582 INFO 29046 [egg-security] use xssProtection middleware
+2017-11-01 17:33:47,583 INFO 29046 [egg-security] use xframe middleware
+2017-11-01 17:33:47,583 INFO 29046 [egg-security] use dta middleware
+2017-11-01 17:33:47,583 INFO 29046 [egg-security] compose 6 middlewares into one security middleware
+2017-11-01 17:33:47,727 INFO 29046 [egg-watcher:app] watcher start success
+2017-11-01 17:34:32,452 INFO 29123 [egg:logger] init all loggers with options: {"dir":"/Users/mac/workspace/eggTodo/logs/eggPureFrame","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"eggPureFrame-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":true,"type":"application"}
+2017-11-01 17:34:32,485 INFO 29123 [egg-schedule]: register schedule egg-schedule:/Users/mac/workspace/eggTodo/node_modules/egg-logrotator/app/schedule/clean_log.js
+2017-11-01 17:34:32,485 INFO 29123 [egg-schedule]: register schedule egg-schedule:/Users/mac/workspace/eggTodo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2017-11-01 17:34:32,635 INFO 29123 [egg-static] starting static serve /public/ -> /Users/mac/workspace/eggTodo/app/public
+2017-11-01 17:34:32,639 INFO 29123 [egg-security] use methodnoallow middleware
+2017-11-01 17:34:32,640 INFO 29123 [egg-security] use noopen middleware
+2017-11-01 17:34:32,641 INFO 29123 [egg-security] use nosniff middleware
+2017-11-01 17:34:32,642 INFO 29123 [egg-security] use xssProtection middleware
+2017-11-01 17:34:32,642 INFO 29123 [egg-security] use xframe middleware
+2017-11-01 17:34:32,642 INFO 29123 [egg-security] use dta middleware
+2017-11-01 17:34:32,642 INFO 29123 [egg-security] compose 6 middlewares into one security middleware
+2017-11-01 17:34:32,784 INFO 29123 [egg-watcher:app] watcher start success
+2017-11-01 17:35:06,529 INFO 29169 [egg:logger] init all loggers with options: {"dir":"/Users/mac/workspace/eggTodo/logs/eggPureFrame","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"eggPureFrame-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":true,"type":"application"}
+2017-11-01 17:35:06,565 INFO 29169 [egg-schedule]: register schedule egg-schedule:/Users/mac/workspace/eggTodo/node_modules/egg-logrotator/app/schedule/clean_log.js
+2017-11-01 17:35:06,565 INFO 29169 [egg-schedule]: register schedule egg-schedule:/Users/mac/workspace/eggTodo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2017-11-01 17:35:06,715 INFO 29169 [egg-static] starting static serve /public/ -> /Users/mac/workspace/eggTodo/app/public
+2017-11-01 17:35:06,718 INFO 29169 [egg-security] use methodnoallow middleware
+2017-11-01 17:35:06,718 INFO 29169 [egg-security] use noopen middleware
+2017-11-01 17:35:06,718 INFO 29169 [egg-security] use nosniff middleware
+2017-11-01 17:35:06,719 INFO 29169 [egg-security] use xssProtection middleware
+2017-11-01 17:35:06,719 INFO 29169 [egg-security] use xframe middleware
+2017-11-01 17:35:06,719 INFO 29169 [egg-security] use dta middleware
+2017-11-01 17:35:06,719 INFO 29169 [egg-security] compose 6 middlewares into one security middleware
+2017-11-01 17:35:06,863 INFO 29169 [egg-watcher:app] watcher start success
+2017-11-01 17:35:43,599 INFO 29267 [egg:logger] init all loggers with options: {"dir":"/Users/mac/workspace/eggTodo/logs/eggPureFrame","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"eggPureFrame-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":true,"type":"application"}
+2017-11-01 17:35:43,636 INFO 29267 [egg-schedule]: register schedule egg-schedule:/Users/mac/workspace/eggTodo/node_modules/egg-logrotator/app/schedule/clean_log.js
+2017-11-01 17:35:43,636 INFO 29267 [egg-schedule]: register schedule egg-schedule:/Users/mac/workspace/eggTodo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2017-11-01 17:35:43,783 INFO 29267 [egg-static] starting static serve /public/ -> /Users/mac/workspace/eggTodo/app/public
+2017-11-01 17:35:43,787 INFO 29267 [egg-security] use methodnoallow middleware
+2017-11-01 17:35:43,788 INFO 29267 [egg-security] use noopen middleware
+2017-11-01 17:35:43,788 INFO 29267 [egg-security] use nosniff middleware
+2017-11-01 17:35:43,788 INFO 29267 [egg-security] use xssProtection middleware
+2017-11-01 17:35:43,789 INFO 29267 [egg-security] use xframe middleware
+2017-11-01 17:35:43,789 INFO 29267 [egg-security] use dta middleware
+2017-11-01 17:35:43,789 INFO 29267 [egg-security] compose 6 middlewares into one security middleware
+2017-11-01 17:35:43,949 INFO 29267 [egg-watcher:app] watcher start success
+2017-11-01 17:37:24,047 INFO 29388 [egg:logger] init all loggers with options: {"dir":"/Users/mac/workspace/eggTodo/logs/eggPureFrame","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"eggPureFrame-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":true,"type":"application"}
+2017-11-01 17:37:24,082 INFO 29388 [egg-schedule]: register schedule egg-schedule:/Users/mac/workspace/eggTodo/node_modules/egg-logrotator/app/schedule/clean_log.js
+2017-11-01 17:37:24,082 INFO 29388 [egg-schedule]: register schedule egg-schedule:/Users/mac/workspace/eggTodo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2017-11-01 17:37:24,224 INFO 29388 [egg-static] starting static serve /public/ -> /Users/mac/workspace/eggTodo/app/public
+2017-11-01 17:37:24,228 INFO 29388 [egg-security] use methodnoallow middleware
+2017-11-01 17:37:24,229 INFO 29388 [egg-security] use noopen middleware
+2017-11-01 17:37:24,229 INFO 29388 [egg-security] use nosniff middleware
+2017-11-01 17:37:24,229 INFO 29388 [egg-security] use xssProtection middleware
+2017-11-01 17:37:24,230 INFO 29388 [egg-security] use xframe middleware
+2017-11-01 17:37:24,230 INFO 29388 [egg-security] use dta middleware
+2017-11-01 17:37:24,230 INFO 29388 [egg-security] compose 6 middlewares into one security middleware
+2017-11-01 17:37:24,362 INFO 29388 [egg-watcher:app] watcher start success
+2017-11-01 17:38:03,520 INFO 29443 [egg:logger] init all loggers with options: {"dir":"/Users/mac/workspace/eggTodo/logs/eggPureFrame","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"eggPureFrame-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":true,"type":"application"}
+2017-11-01 17:38:03,555 INFO 29443 [egg-schedule]: register schedule egg-schedule:/Users/mac/workspace/eggTodo/node_modules/egg-logrotator/app/schedule/clean_log.js
+2017-11-01 17:38:03,555 INFO 29443 [egg-schedule]: register schedule egg-schedule:/Users/mac/workspace/eggTodo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2017-11-01 17:38:03,697 INFO 29443 [egg-static] starting static serve /public/ -> /Users/mac/workspace/eggTodo/app/public
+2017-11-01 17:38:03,700 INFO 29443 [egg-security] use methodnoallow middleware
+2017-11-01 17:38:03,701 INFO 29443 [egg-security] use noopen middleware
+2017-11-01 17:38:03,701 INFO 29443 [egg-security] use nosniff middleware
+2017-11-01 17:38:03,702 INFO 29443 [egg-security] use xssProtection middleware
+2017-11-01 17:38:03,702 INFO 29443 [egg-security] use xframe middleware
+2017-11-01 17:38:03,702 INFO 29443 [egg-security] use dta middleware
+2017-11-01 17:38:03,702 INFO 29443 [egg-security] compose 6 middlewares into one security middleware
+2017-11-01 17:38:03,833 INFO 29443 [egg-watcher:app] watcher start success
+2017-11-01 17:39:13,841 INFO 29563 [egg:logger] init all loggers with options: {"dir":"/Users/mac/workspace/eggTodo/logs/eggPureFrame","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"eggPureFrame-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":true,"type":"application"}
+2017-11-01 17:39:13,876 INFO 29563 [egg-schedule]: register schedule egg-schedule:/Users/mac/workspace/eggTodo/node_modules/egg-logrotator/app/schedule/clean_log.js
+2017-11-01 17:39:13,876 INFO 29563 [egg-schedule]: register schedule egg-schedule:/Users/mac/workspace/eggTodo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2017-11-01 17:39:14,008 INFO 29563 [egg-static] starting static serve /public/ -> /Users/mac/workspace/eggTodo/app/public
+2017-11-01 17:39:14,011 INFO 29563 [egg-security] use methodnoallow middleware
+2017-11-01 17:39:14,011 INFO 29563 [egg-security] use noopen middleware
+2017-11-01 17:39:14,012 INFO 29563 [egg-security] use nosniff middleware
+2017-11-01 17:39:14,012 INFO 29563 [egg-security] use xssProtection middleware
+2017-11-01 17:39:14,012 INFO 29563 [egg-security] use xframe middleware
+2017-11-01 17:39:14,013 INFO 29563 [egg-security] use dta middleware
+2017-11-01 17:39:14,013 INFO 29563 [egg-security] compose 6 middlewares into one security middleware
+2017-11-01 17:39:14,169 INFO 29563 [egg-watcher:app] watcher start success
+2017-11-01 17:52:26,145 INFO 29989 [egg:logger] init all loggers with options: {"dir":"/Users/mac/workspace/eggTodo/logs/eggPureFrame","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"eggPureFrame-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":true,"type":"application"}
+2017-11-01 17:52:26,191 INFO 29989 [egg-schedule]: register schedule egg-schedule:/Users/mac/workspace/eggTodo/node_modules/egg-logrotator/app/schedule/clean_log.js
+2017-11-01 17:52:26,191 INFO 29989 [egg-schedule]: register schedule egg-schedule:/Users/mac/workspace/eggTodo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2017-11-01 17:52:26,325 INFO 29989 [egg-static] starting static serve /public/ -> /Users/mac/workspace/eggTodo/app/public
+2017-11-01 17:52:26,329 INFO 29989 [egg-security] use methodnoallow middleware
+2017-11-01 17:52:26,330 INFO 29989 [egg-security] use noopen middleware
+2017-11-01 17:52:26,331 INFO 29989 [egg-security] use nosniff middleware
+2017-11-01 17:52:26,331 INFO 29989 [egg-security] use xssProtection middleware
+2017-11-01 17:52:26,331 INFO 29989 [egg-security] use xframe middleware
+2017-11-01 17:52:26,332 INFO 29989 [egg-security] use dta middleware
+2017-11-01 17:52:26,332 INFO 29989 [egg-security] compose 6 middlewares into one security middleware
+2017-11-01 17:52:26,484 INFO 29989 [egg-watcher:app] watcher start success
+2017-11-01 17:53:58,465 INFO 30158 [egg:logger] init all loggers with options: {"dir":"/Users/mac/workspace/eggTodo/logs/eggPureFrame","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"eggPureFrame-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":true,"type":"application"}
+2017-11-01 17:53:58,510 INFO 30158 [egg-schedule]: register schedule egg-schedule:/Users/mac/workspace/eggTodo/node_modules/egg-logrotator/app/schedule/clean_log.js
+2017-11-01 17:53:58,510 INFO 30158 [egg-schedule]: register schedule egg-schedule:/Users/mac/workspace/eggTodo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2017-11-01 17:53:58,705 INFO 30158 [egg-static] starting static serve /public/ -> /Users/mac/workspace/eggTodo/app/public
+2017-11-01 17:53:58,708 INFO 30158 [egg-security] use methodnoallow middleware
+2017-11-01 17:53:58,708 INFO 30158 [egg-security] use noopen middleware
+2017-11-01 17:53:58,708 INFO 30158 [egg-security] use nosniff middleware
+2017-11-01 17:53:58,709 INFO 30158 [egg-security] use xssProtection middleware
+2017-11-01 17:53:58,709 INFO 30158 [egg-security] use xframe middleware
+2017-11-01 17:53:58,709 INFO 30158 [egg-security] use dta middleware
+2017-11-01 17:53:58,710 INFO 30158 [egg-security] compose 6 middlewares into one security middleware
+2017-11-01 17:53:58,852 INFO 30158 [egg-watcher:app] watcher start success
+2017-11-01 17:54:29,849 INFO 30230 [egg:logger] init all loggers with options: {"dir":"/Users/mac/workspace/eggTodo/logs/eggPureFrame","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"eggPureFrame-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":true,"type":"application"}
+2017-11-01 17:54:29,885 INFO 30230 [egg-schedule]: register schedule egg-schedule:/Users/mac/workspace/eggTodo/node_modules/egg-logrotator/app/schedule/clean_log.js
+2017-11-01 17:54:29,885 INFO 30230 [egg-schedule]: register schedule egg-schedule:/Users/mac/workspace/eggTodo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2017-11-01 17:54:30,053 INFO 30230 [egg-static] starting static serve /public/ -> /Users/mac/workspace/eggTodo/app/public
+2017-11-01 17:54:30,057 INFO 30230 [egg-security] use methodnoallow middleware
+2017-11-01 17:54:30,058 INFO 30230 [egg-security] use noopen middleware
+2017-11-01 17:54:30,058 INFO 30230 [egg-security] use nosniff middleware
+2017-11-01 17:54:30,058 INFO 30230 [egg-security] use xssProtection middleware
+2017-11-01 17:54:30,059 INFO 30230 [egg-security] use xframe middleware
+2017-11-01 17:54:30,059 INFO 30230 [egg-security] use dta middleware
+2017-11-01 17:54:30,059 INFO 30230 [egg-security] compose 6 middlewares into one security middleware
+2017-11-01 17:54:30,200 INFO 30230 [egg-watcher:app] watcher start success
+2017-11-01 17:56:11,072 INFO 30354 [egg:logger] init all loggers with options: {"dir":"/Users/mac/workspace/eggTodo/logs/eggPureFrame","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"eggPureFrame-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":true,"type":"application"}
+2017-11-01 17:56:11,104 INFO 30354 [egg-schedule]: register schedule egg-schedule:/Users/mac/workspace/eggTodo/node_modules/egg-logrotator/app/schedule/clean_log.js
+2017-11-01 17:56:11,104 INFO 30354 [egg-schedule]: register schedule egg-schedule:/Users/mac/workspace/eggTodo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2017-11-01 17:56:11,274 INFO 30354 [egg-static] starting static serve /public/ -> /Users/mac/workspace/eggTodo/app/public
+2017-11-01 17:56:11,284 INFO 30354 [egg-security] use methodnoallow middleware
+2017-11-01 17:56:11,284 INFO 30354 [egg-security] use noopen middleware
+2017-11-01 17:56:11,285 INFO 30354 [egg-security] use nosniff middleware
+2017-11-01 17:56:11,285 INFO 30354 [egg-security] use xssProtection middleware
+2017-11-01 17:56:11,285 INFO 30354 [egg-security] use xframe middleware
+2017-11-01 17:56:11,285 INFO 30354 [egg-security] use dta middleware
+2017-11-01 17:56:11,286 INFO 30354 [egg-security] compose 6 middlewares into one security middleware
+2017-11-01 17:56:11,422 INFO 30354 [egg-watcher:app] watcher start success
+2017-11-01 17:56:29,672 INFO 30416 [egg:logger] init all loggers with options: {"dir":"/Users/mac/workspace/eggTodo/logs/eggPureFrame","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"eggPureFrame-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":true,"type":"application"}
+2017-11-01 17:56:29,707 INFO 30416 [egg-schedule]: register schedule egg-schedule:/Users/mac/workspace/eggTodo/node_modules/egg-logrotator/app/schedule/clean_log.js
+2017-11-01 17:56:29,707 INFO 30416 [egg-schedule]: register schedule egg-schedule:/Users/mac/workspace/eggTodo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2017-11-01 17:56:29,894 INFO 30416 [egg-static] starting static serve /public/ -> /Users/mac/workspace/eggTodo/app/public
+2017-11-01 17:56:29,907 INFO 30416 [egg-security] use methodnoallow middleware
+2017-11-01 17:56:29,908 INFO 30416 [egg-security] use noopen middleware
+2017-11-01 17:56:29,908 INFO 30416 [egg-security] use nosniff middleware
+2017-11-01 17:56:29,909 INFO 30416 [egg-security] use xssProtection middleware
+2017-11-01 17:56:29,909 INFO 30416 [egg-security] use xframe middleware
+2017-11-01 17:56:29,910 INFO 30416 [egg-security] use dta middleware
+2017-11-01 17:56:29,910 INFO 30416 [egg-security] compose 6 middlewares into one security middleware
+2017-11-01 17:56:30,063 INFO 30416 [egg-watcher:app] watcher start success
+2017-11-01 18:00:01,949 INFO 31083 [egg:logger] init all loggers with options: {"dir":"/Users/mac/workspace/eggTodo/logs/eggPureFrame","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"eggPureFrame-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":true,"type":"application"}
+2017-11-01 18:00:01,983 INFO 31083 [egg-schedule]: register schedule egg-schedule:/Users/mac/workspace/eggTodo/node_modules/egg-logrotator/app/schedule/clean_log.js
+2017-11-01 18:00:01,983 INFO 31083 [egg-schedule]: register schedule egg-schedule:/Users/mac/workspace/eggTodo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2017-11-01 18:00:02,096 INFO 31083 [egg-static] starting static serve /public/ -> /Users/mac/workspace/eggTodo/app/public
+2017-11-01 18:00:02,098 INFO 31083 [egg-security] use methodnoallow middleware
+2017-11-01 18:00:02,099 INFO 31083 [egg-security] use noopen middleware
+2017-11-01 18:00:02,099 INFO 31083 [egg-security] use nosniff middleware
+2017-11-01 18:00:02,099 INFO 31083 [egg-security] use xssProtection middleware
+2017-11-01 18:00:02,100 INFO 31083 [egg-security] use xframe middleware
+2017-11-01 18:00:02,100 INFO 31083 [egg-security] use dta middleware
+2017-11-01 18:00:02,100 INFO 31083 [egg-security] compose 6 middlewares into one security middleware
+2017-11-01 18:00:02,243 INFO 31083 [egg-watcher:app] watcher start success
+2017-11-01 18:03:00,933 INFO 31300 [egg:logger] init all loggers with options: {"dir":"/Users/mac/workspace/eggTodo/logs/eggPureFrame","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"eggPureFrame-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":true,"type":"application"}
+2017-11-01 18:03:00,977 INFO 31300 [egg-schedule]: register schedule egg-schedule:/Users/mac/workspace/eggTodo/node_modules/egg-logrotator/app/schedule/clean_log.js
+2017-11-01 18:03:00,977 INFO 31300 [egg-schedule]: register schedule egg-schedule:/Users/mac/workspace/eggTodo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2017-11-01 18:03:01,158 INFO 31300 [egg-static] starting static serve /public/ -> /Users/mac/workspace/eggTodo/app/public
+2017-11-01 18:03:01,163 INFO 31300 [egg-security] use methodnoallow middleware
+2017-11-01 18:03:01,164 INFO 31300 [egg-security] use noopen middleware
+2017-11-01 18:03:01,165 INFO 31300 [egg-security] use nosniff middleware
+2017-11-01 18:03:01,165 INFO 31300 [egg-security] use xssProtection middleware
+2017-11-01 18:03:01,169 INFO 31300 [egg-security] use xframe middleware
+2017-11-01 18:03:01,170 INFO 31300 [egg-security] use dta middleware
+2017-11-01 18:03:01,170 INFO 31300 [egg-security] compose 6 middlewares into one security middleware
+2017-11-01 18:03:01,429 INFO 31300 [egg-watcher:app] watcher start success
+2017-11-01 18:04:28,315 INFO 31416 [egg:logger] init all loggers with options: {"dir":"/Users/mac/workspace/eggTodo/logs/eggPureFrame","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"eggPureFrame-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":true,"type":"application"}
+2017-11-01 18:04:28,358 INFO 31416 [egg-schedule]: register schedule egg-schedule:/Users/mac/workspace/eggTodo/node_modules/egg-logrotator/app/schedule/clean_log.js
+2017-11-01 18:04:28,358 INFO 31416 [egg-schedule]: register schedule egg-schedule:/Users/mac/workspace/eggTodo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2017-11-01 18:04:28,473 INFO 31416 [egg-static] starting static serve /public/ -> /Users/mac/workspace/eggTodo/app/public
+2017-11-01 18:04:28,476 INFO 31416 [egg-security] use methodnoallow middleware
+2017-11-01 18:04:28,477 INFO 31416 [egg-security] use noopen middleware
+2017-11-01 18:04:28,477 INFO 31416 [egg-security] use nosniff middleware
+2017-11-01 18:04:28,477 INFO 31416 [egg-security] use xssProtection middleware
+2017-11-01 18:04:28,478 INFO 31416 [egg-security] use xframe middleware
+2017-11-01 18:04:28,478 INFO 31416 [egg-security] use dta middleware
+2017-11-01 18:04:28,478 INFO 31416 [egg-security] compose 6 middlewares into one security middleware
+2017-11-01 18:04:28,664 INFO 31416 [egg-watcher:app] watcher start success
+2017-11-01 18:04:51,968 INFO 31471 [egg:logger] init all loggers with options: {"dir":"/Users/mac/workspace/eggTodo/logs/eggPureFrame","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"eggPureFrame-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":true,"type":"application"}
+2017-11-01 18:04:52,003 INFO 31471 [egg-schedule]: register schedule egg-schedule:/Users/mac/workspace/eggTodo/node_modules/egg-logrotator/app/schedule/clean_log.js
+2017-11-01 18:04:52,003 INFO 31471 [egg-schedule]: register schedule egg-schedule:/Users/mac/workspace/eggTodo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2017-11-01 18:04:52,120 INFO 31471 [egg-static] starting static serve /public/ -> /Users/mac/workspace/eggTodo/app/public
+2017-11-01 18:04:52,123 INFO 31471 [egg-security] use methodnoallow middleware
+2017-11-01 18:04:52,123 INFO 31471 [egg-security] use noopen middleware
+2017-11-01 18:04:52,123 INFO 31471 [egg-security] use nosniff middleware
+2017-11-01 18:04:52,124 INFO 31471 [egg-security] use xssProtection middleware
+2017-11-01 18:04:52,124 INFO 31471 [egg-security] use xframe middleware
+2017-11-01 18:04:52,124 INFO 31471 [egg-security] use dta middleware
+2017-11-01 18:04:52,124 INFO 31471 [egg-security] compose 6 middlewares into one security middleware
+2017-11-01 18:04:52,297 INFO 31471 [egg-watcher:app] watcher start success
+2017-11-01 18:05:13,715 INFO 31520 [egg:logger] init all loggers with options: {"dir":"/Users/mac/workspace/eggTodo/logs/eggPureFrame","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"eggPureFrame-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":true,"type":"application"}
+2017-11-01 18:05:13,753 INFO 31520 [egg-schedule]: register schedule egg-schedule:/Users/mac/workspace/eggTodo/node_modules/egg-logrotator/app/schedule/clean_log.js
+2017-11-01 18:05:13,753 INFO 31520 [egg-schedule]: register schedule egg-schedule:/Users/mac/workspace/eggTodo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2017-11-01 18:05:13,879 INFO 31520 [egg-static] starting static serve /public/ -> /Users/mac/workspace/eggTodo/app/public
+2017-11-01 18:05:13,882 INFO 31520 [egg-security] use methodnoallow middleware
+2017-11-01 18:05:13,883 INFO 31520 [egg-security] use noopen middleware
+2017-11-01 18:05:13,883 INFO 31520 [egg-security] use nosniff middleware
+2017-11-01 18:05:13,883 INFO 31520 [egg-security] use xssProtection middleware
+2017-11-01 18:05:13,884 INFO 31520 [egg-security] use xframe middleware
+2017-11-01 18:05:13,884 INFO 31520 [egg-security] use dta middleware
+2017-11-01 18:05:13,884 INFO 31520 [egg-security] compose 6 middlewares into one security middleware
+2017-11-01 18:05:14,074 INFO 31520 [egg-watcher:app] watcher start success
+2017-11-01 18:06:17,965 INFO 31638 [egg:logger] init all loggers with options: {"dir":"/Users/mac/workspace/eggTodo/logs/eggPureFrame","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"eggPureFrame-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":true,"type":"application"}
+2017-11-01 18:06:18,001 INFO 31638 [egg-schedule]: register schedule egg-schedule:/Users/mac/workspace/eggTodo/node_modules/egg-logrotator/app/schedule/clean_log.js
+2017-11-01 18:06:18,001 INFO 31638 [egg-schedule]: register schedule egg-schedule:/Users/mac/workspace/eggTodo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2017-11-01 18:06:18,118 INFO 31638 [egg-static] starting static serve /public/ -> /Users/mac/workspace/eggTodo/app/public
+2017-11-01 18:06:18,120 INFO 31638 [egg-security] use methodnoallow middleware
+2017-11-01 18:06:18,121 INFO 31638 [egg-security] use noopen middleware
+2017-11-01 18:06:18,121 INFO 31638 [egg-security] use nosniff middleware
+2017-11-01 18:06:18,121 INFO 31638 [egg-security] use xssProtection middleware
+2017-11-01 18:06:18,122 INFO 31638 [egg-security] use xframe middleware
+2017-11-01 18:06:18,122 INFO 31638 [egg-security] use dta middleware
+2017-11-01 18:06:18,122 INFO 31638 [egg-security] compose 6 middlewares into one security middleware
+2017-11-01 18:06:18,296 INFO 31638 [egg-watcher:app] watcher start success
+2017-11-01 18:16:58,236 INFO 32039 [egg:logger] init all loggers with options: {"dir":"/Users/mac/workspace/eggTodo/logs/eggPureFrame","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"eggPureFrame-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":true,"type":"application"}
+2017-11-01 18:16:58,280 INFO 32039 [egg-schedule]: register schedule egg-schedule:/Users/mac/workspace/eggTodo/node_modules/egg-logrotator/app/schedule/clean_log.js
+2017-11-01 18:16:58,280 INFO 32039 [egg-schedule]: register schedule egg-schedule:/Users/mac/workspace/eggTodo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2017-11-01 18:16:58,452 INFO 32039 [egg-static] starting static serve /public/ -> /Users/mac/workspace/eggTodo/app/public
+2017-11-01 18:16:58,456 INFO 32039 [egg-security] use methodnoallow middleware
+2017-11-01 18:16:58,457 INFO 32039 [egg-security] use noopen middleware
+2017-11-01 18:16:58,457 INFO 32039 [egg-security] use nosniff middleware
+2017-11-01 18:16:58,458 INFO 32039 [egg-security] use xssProtection middleware
+2017-11-01 18:16:58,458 INFO 32039 [egg-security] use xframe middleware
+2017-11-01 18:16:58,459 INFO 32039 [egg-security] use dta middleware
+2017-11-01 18:16:58,459 INFO 32039 [egg-security] compose 6 middlewares into one security middleware
+2017-11-01 18:16:58,731 INFO 32039 [egg-watcher:app] watcher start success
+2017-11-01 18:29:17,394 INFO 33232 [egg:logger] init all loggers with options: {"dir":"/Users/mac/workspace/eggTodo/logs/eggPureFrame","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"eggPureFrame-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":true,"type":"application"}
+2017-11-01 18:29:17,431 INFO 33232 [egg-schedule]: register schedule egg-schedule:/Users/mac/workspace/eggTodo/node_modules/egg-logrotator/app/schedule/clean_log.js
+2017-11-01 18:29:17,431 INFO 33232 [egg-schedule]: register schedule egg-schedule:/Users/mac/workspace/eggTodo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2017-11-01 18:29:17,561 INFO 33232 [egg-static] starting static serve /public/ -> /Users/mac/workspace/eggTodo/app/public
+2017-11-01 18:29:17,564 INFO 33232 [egg-security] use methodnoallow middleware
+2017-11-01 18:29:17,564 INFO 33232 [egg-security] use noopen middleware
+2017-11-01 18:29:17,565 INFO 33232 [egg-security] use nosniff middleware
+2017-11-01 18:29:17,565 INFO 33232 [egg-security] use xssProtection middleware
+2017-11-01 18:29:17,565 INFO 33232 [egg-security] use xframe middleware
+2017-11-01 18:29:17,566 INFO 33232 [egg-security] use dta middleware
+2017-11-01 18:29:17,566 INFO 33232 [egg-security] compose 6 middlewares into one security middleware
+2017-11-01 18:29:17,748 INFO 33232 [egg-watcher:app] watcher start success
+2017-11-01 18:30:48,150 INFO 33327 [egg:logger] init all loggers with options: {"dir":"/Users/mac/workspace/eggTodo/logs/eggPureFrame","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"eggPureFrame-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":true,"type":"application"}
+2017-11-01 18:30:48,184 INFO 33327 [egg-schedule]: register schedule egg-schedule:/Users/mac/workspace/eggTodo/node_modules/egg-logrotator/app/schedule/clean_log.js
+2017-11-01 18:30:48,184 INFO 33327 [egg-schedule]: register schedule egg-schedule:/Users/mac/workspace/eggTodo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2017-11-01 18:30:48,311 INFO 33327 [egg-static] starting static serve /public/ -> /Users/mac/workspace/eggTodo/app/public
+2017-11-01 18:30:48,314 INFO 33327 [egg-security] use methodnoallow middleware
+2017-11-01 18:30:48,315 INFO 33327 [egg-security] use noopen middleware
+2017-11-01 18:30:48,315 INFO 33327 [egg-security] use nosniff middleware
+2017-11-01 18:30:48,315 INFO 33327 [egg-security] use xssProtection middleware
+2017-11-01 18:30:48,316 INFO 33327 [egg-security] use xframe middleware
+2017-11-01 18:30:48,316 INFO 33327 [egg-security] use dta middleware
+2017-11-01 18:30:48,316 INFO 33327 [egg-security] compose 6 middlewares into one security middleware
+2017-11-01 18:30:48,491 INFO 33327 [egg-watcher:app] watcher start success
+2017-11-01 18:51:18,204 INFO 35367 [egg:logger] init all loggers with options: {"dir":"/Users/mac/workspace/eggTodo/logs/eggPureFrame","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"eggPureFrame-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":true,"type":"application"}
+2017-11-01 18:51:18,236 INFO 35367 [egg-schedule]: register schedule egg-schedule:/Users/mac/workspace/eggTodo/node_modules/egg-logrotator/app/schedule/clean_log.js
+2017-11-01 18:51:18,236 INFO 35367 [egg-schedule]: register schedule egg-schedule:/Users/mac/workspace/eggTodo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2017-11-01 18:51:18,365 INFO 35367 [egg-static] starting static serve /public/ -> /Users/mac/workspace/eggTodo/app/public
+2017-11-01 18:51:18,369 INFO 35367 [egg-security] use methodnoallow middleware
+2017-11-01 18:51:18,370 INFO 35367 [egg-security] use noopen middleware
+2017-11-01 18:51:18,371 INFO 35367 [egg-security] use nosniff middleware
+2017-11-01 18:51:18,371 INFO 35367 [egg-security] use xssProtection middleware
+2017-11-01 18:51:18,372 INFO 35367 [egg-security] use xframe middleware
+2017-11-01 18:51:18,372 INFO 35367 [egg-security] use dta middleware
+2017-11-01 18:51:18,372 INFO 35367 [egg-security] compose 6 middlewares into one security middleware
+2017-11-01 18:51:18,555 INFO 35367 [egg-watcher:app] watcher start success

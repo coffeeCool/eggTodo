@@ -1,5 +1,9 @@
-module.exports = (app) ->
-  # 以后要使用RESTful api 编写接口文档
-  # 路由
+export default (app) ->
+  app.get '/listTodos', app.controller.todos.listTodos
+  app.get '/oneTodo', app.controller.todos.oneTodo
+  app.get '/addTodo', app.controller.todos.addTodo
+  app.get '/updateTodo', app.controller.todos.updateTodo
+  app.get '/deleteTodo', app.controller.todos.deleteTodo
 
   return
+

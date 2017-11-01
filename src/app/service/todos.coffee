@@ -1,30 +1,31 @@
-import utils from '../config/config.default.coffee'
+import dd from 'ddeyes'
 
-module.exports = (app) ->
+export default (app) ->
 
   class TodosService extends app.Service
 
     constructor: (ctx) ->
       super ctx
-      @root = utils.source.leanCloud.uri
-      # 返回this用于以后的链式调用
       @
 
-    request: (url, opts) ->
-      url = "#{@root}#{url}"
-      opts = {
-        headers: {
-          utils.source.leanCloud.headers...
-          (
-            do ->
-              if opts?.headers_extra?
-              then opts.headers_extra
-              else {}
-          )...
-        }
-        opts...
-      }
-      await @ctx.curl url, opts
-
-    # API
+    listTodos: (params) ->
+      result = params
+      result
     
+    oneTodo: (params) ->
+      result = params
+      result
+    
+    addTodo: (params) ->
+      result = params
+      result
+    
+    updateTodo: (params) ->
+      result = params
+      result
+
+    deleteTodo: (params) ->
+      result = params
+      result
+
+  return TodosService
