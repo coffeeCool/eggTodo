@@ -64,6 +64,4 @@ export default (app) ->
       ctx.body = await ctx.service.todos.deleteTodo
         todos: []
 
-  
-
   return TodosController
