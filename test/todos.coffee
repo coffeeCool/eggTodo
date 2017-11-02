@@ -1,14 +1,20 @@
 import dd from 'ddeyes'
 import axios from 'axios'
 
-listTodos =  ->
+check = (req) ->
+  if req.status >= 200 and req.status < 300
+    true
+  else
+    false
+  
+todos =  ->
   axios
     method: 'GET'
-    url: 'http://192.168.0.192:7001/listTodos'
+    url: 'http://192.168.0.192:7001/todos'
     dataType: 'json'
-    
+      
   .then (response) ->
-    response.data 
+    response.data if check(response) is true
   
   .catch (error) ->
     dd error
@@ -16,53 +22,59 @@ listTodos =  ->
 oneTodo =  ->
   axios
     method: 'GET'
-    url: 'http://192.168.0.192:7001/oneTodo'
+    url: 'http://192.168.0.192:7001/todos/1'
     dataType: 'json'
     
   .then (response) ->
-    response.data 
+    response.data if check(response) is true
   
   .catch (error) ->
     dd error
 
 addTodo =  ->
   axios
-    method: 'GET'
-    url: 'http://192.168.0.192:7001/addTodo'
+    method: 'POST'
+    url: 'http://192.168.0.192:7001/todos'
     dataType: 'json'
+    data:
+      name: 'wangwu'
+      location: 'beijing'
     
   .then (response) ->
-    response.data 
+    response.data if check(response) is true
   
   .catch (error) ->
     dd error
 
 updateTodo =  ->
   axios
-    method: 'GET'
-    url: 'http://192.168.0.192:7001/updateTodo'
+    method: 'PUT'
+    url: 'http://192.168.0.192:7001/todos/1'
     dataType: 'json'
+    data:
+      name: '李逵'
+      location: '梁山'
     
   .then (response) ->
-    response.data 
+    response.data if check(response) is true
   
   .catch (error) ->
     dd error
 
-deleteTodo =  ->
+deleteTodo = (id) ->
   axios
-    method: 'GET'
-    url: 'http://192.168.0.192:7001/deleteTodo'
+    method: 'DELETE'
+    url: "http://192.168.0.192:7001/todos/#{id}"
     dataType: 'json'
     
   .then (response) ->
-    response.data 
+    response.data if check(response) is true
   
   .catch (error) ->
     dd error
     
 export {
-  listTodos
+  todos
   oneTodo
   addTodo
   updateTodo

@@ -1,7 +1,7 @@
 import 'shelljs/make'
 import dd from 'ddeyes'
 import {
-  listTodos
+  todos
   oneTodo
   addTodo
   updateTodo
@@ -9,14 +9,14 @@ import {
 } from './todos'
 
 target.all = ->
-  target.listTodos()
+  target.todos()
   target.oneTodo()
   target.addTodo()
   target.updateTodo()
   target.deleteTodo()
 
-target.listTodos = ->
-  listTodos()
+target.todos = ->
+  todos()
   .then (data) ->
     dd data
   
@@ -36,7 +36,17 @@ target.updateTodo = ->
     dd data
 
 target.deleteTodo = ->
-  deleteTodo()
+  todos()
   .then (data) ->
-    dd data
+    ids = data.reduce (r, c) ->
+      [
+        r...
+        c.id
+      ]
+    , []
+    for id in ids
+      deleteTodo(id)
+     
+
+  
   

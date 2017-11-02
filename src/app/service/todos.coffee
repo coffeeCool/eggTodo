@@ -1,5 +1,3 @@
-import dd from 'ddeyes'
-
 export default (app) ->
 
   class TodosService extends app.Service
@@ -8,7 +6,7 @@ export default (app) ->
       super ctx
       @
 
-    listTodos: (params) ->
+    todos: (params) ->
       result = params
       result
     

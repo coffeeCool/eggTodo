@@ -1,15 +1,14 @@
-import dd from 'ddeyes'
-
 export default (app) ->
   class TodosController extends app.Controller
+  
     constructor: (ctx) ->
       super ctx
       @
 
-    listTodos: ->
+    todos: ->
       { ctx } = @
 
-      ctx.body = await ctx.service.todos.listTodos 
+      ctx.body = await ctx.service.todos.todos 
         todos:[
           {
             id: 1
