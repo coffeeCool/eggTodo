@@ -1,29 +1,24 @@
+import actions from  '../actions/index'
+import dd from 'ddeyes'
 export default (app) ->
 
   class TodosService extends app.Service
 
-    constructor: (ctx) ->
-      super ctx
-      @
-
     todos: (params) ->
-      result = params
-      result
-    
+      @ctx.app.store.getState()
+      
     oneTodo: (params) ->
-      result = params
-      result
-    
+      @ctx.app.store.getState()
+     
     addTodo: (params) ->
-      result = params
-      result
-    
+      @ctx.app.store.dispatch actions.addTodo(params)
+      @ctx.app.store.getState()
+     
     updateTodo: (params) ->
-      result = params
-      result
+      @ctx.app.store.dispatch actions.updateTodo(params)
+      @ctx.app.store.getState()
 
     deleteTodo: (params) ->
-      result = params
-      result
-
-  return TodosService
+      @ctx.app.store.dispatch actions.deleteTodo()
+      @ctx.app.store.getState()
+  

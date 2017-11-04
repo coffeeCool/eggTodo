@@ -8,60 +8,27 @@ export default (app) ->
     todos: ->
       { ctx } = @
 
-      ctx.body = await ctx.service.todos.todos 
-        todos:[
-          {
-            id: 1
-            name: 'zhangsan'
-            location: 'wuhan'
-          },
-          {
-            id: 2
-            name: 'lisi'
-            location: 'beijing'
-          }
-        ]
-      
+      ctx.body = await ctx.service.todos.todos ctx.request.body
+        
     oneTodo: ->
       { ctx } = @
 
-      ctx.body = await ctx.service.todos.oneTodo 
-        todos: [
-          {
-            id: 1
-            name: 'zhangsan'
-            location: 'wuhan'
-          }
-        ]
-
+      ctx.body = await ctx.service.todos.oneTodo ctx.request.body
+      
     addTodo: ->
       { ctx } = @
 
-      ctx.body = await ctx.service.todos.addTodo
-        todos:[
-          {
-            id: 3
-            name: 'wangwu'
-            location: 'shanghai'
-          }
-        ]
+      ctx.body = await ctx.service.todos.addTodo ctx.request.body
       
     updateTodo: ->
       { ctx } = @
 
-      ctx.body = await ctx.service.todos.updateTodo
-        todo: [
-          {
-            id: 1
-            name: '张三'
-            location: '武汉'
-          }
-        ]
+      ctx.body = await ctx.service.todos.updateTodo ctx.request.body
 
     deleteTodo: ->
       { ctx } = @
 
-      ctx.body = await ctx.service.todos.deleteTodo
-        todos: []
+      ctx.body = await ctx.service.todos.deleteTodo ctx.request.body
+        
 
   return TodosController

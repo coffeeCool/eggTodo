@@ -36,11 +36,11 @@ addTodo =  ->
     method: 'POST'
     url: 'http://192.168.0.192:7001/todos'
     dataType: 'json'
-    data:
-      name: 'wangwu'
-      location: 'beijing'
+    data: 
+      name: '张飞'
+      location: '武汉'
     
-  .then (response) ->
+  .then (response) -> 
     response.data if check(response) is true
   
   .catch (error) ->
@@ -53,7 +53,7 @@ updateTodo =  ->
     dataType: 'json'
     data:
       name: '李逵'
-      location: '梁山'
+      location: '北京'
     
   .then (response) ->
     response.data if check(response) is true
@@ -61,10 +61,10 @@ updateTodo =  ->
   .catch (error) ->
     dd error
 
-deleteTodo = (id) ->
+deleteTodo =  ->
   axios
     method: 'DELETE'
-    url: "http://192.168.0.192:7001/todos/#{id}"
+    url: "http://192.168.0.192:7001/todos/1"
     dataType: 'json'
     
   .then (response) ->
@@ -72,6 +72,18 @@ deleteTodo = (id) ->
   
   .catch (error) ->
     dd error
+
+# deleteTodo = (id) ->
+#   axios
+#     method: 'DELETE'
+#     url: "http://192.168.0.192:7001/todos/#{id}"
+#     dataType: 'json'
+    
+#   .then (response) ->
+#     response.data if check(response) is true
+  
+#   .catch (error) ->
+#     dd error
     
 export {
   todos

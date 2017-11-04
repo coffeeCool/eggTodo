@@ -36,16 +36,21 @@ target.updateTodo = ->
     dd data
 
 target.deleteTodo = ->
-  todos()
+  deleteTodo()
   .then (data) ->
-    ids = data.reduce (r, c) ->
-      [
-        r...
-        c.id
-      ]
-    , []
-    for id in ids
-      deleteTodo(id)
+    dd data
+
+# target.deleteTodo = ->
+#   todos()
+#   .then (data) ->
+#     ids = data.reduce (r, c) ->
+#       [
+#         r...
+#         c.id
+#       ]
+#     , []
+#     for id in ids
+#       deleteTodo(id)
      
 
   
