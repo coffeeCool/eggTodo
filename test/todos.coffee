@@ -37,6 +37,7 @@ addTodo =  ->
     url: 'http://192.168.0.192:7001/todos'
     dataType: 'json'
     data: 
+      # id: 1
       name: '张飞'
       location: '武汉'
     

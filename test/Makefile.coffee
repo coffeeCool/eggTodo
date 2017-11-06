@@ -43,7 +43,7 @@ target.deleteTodo = ->
 # target.deleteTodo = ->
 #   todos()
 #   .then (data) ->
-#     ids = data.reduce (r, c) ->
+#     ids = data.todoApp.todos.reduce (r, c) ->
 #       [
 #         r...
 #         c.id
@@ -51,6 +51,9 @@ target.deleteTodo = ->
 #     , []
 #     for id in ids
 #       deleteTodo(id)
+#     todos()
+#     .then (data) ->
+#       dd data
      
 
   
