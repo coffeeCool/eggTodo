@@ -6,14 +6,17 @@ import {
   addTodo
   updateTodo
   deleteTodo
-} from './todos'
+  getObjectId
+  login
+} from './LC_API.coffee'
 
 target.all = ->
-  target.todos()
-  target.oneTodo()
-  target.addTodo()
-  target.updateTodo()
-  target.deleteTodo()
+  dd 'ok'
+
+target.login = ->
+  login()
+  .then (data) ->
+    dd data
 
 target.todos = ->
   todos()
@@ -21,10 +24,12 @@ target.todos = ->
     dd data
   
 target.oneTodo = ->
-  oneTodo()
+  todos()
   .then (data) ->
-    dd data
-  
+    oneTodo(getObjectId(data)[0])
+    .then (data) ->
+      dd data
+
 target.addTodo = ->
   addTodo()
   .then (data) ->
@@ -34,26 +39,12 @@ target.updateTodo = ->
   updateTodo()
   .then (data) ->
     dd data
+  
 
 target.deleteTodo = ->
   deleteTodo()
   .then (data) ->
     dd data
-
-# target.deleteTodo = ->
-#   todos()
-#   .then (data) ->
-#     ids = data.todoApp.todos.reduce (r, c) ->
-#       [
-#         r...
-#         c.id
-#       ]
-#     , []
-#     for id in ids
-#       deleteTodo(id)
-#     todos()
-#     .then (data) ->
-#       dd data
      
 
   

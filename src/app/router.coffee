@@ -6,4 +6,3 @@ export default (app) ->
   app.delete '/todos/:id', app.controller.todos.deleteTodo
   
   return
-

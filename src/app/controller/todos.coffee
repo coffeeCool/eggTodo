@@ -1,4 +1,5 @@
 export default (app) ->
+
   class TodosController extends app.Controller
   
     constructor: (ctx) ->
@@ -7,28 +8,28 @@ export default (app) ->
 
     todos: ->
       { ctx } = @
-
-      ctx.body = await ctx.service.todos.todos ctx.request.body
-        
+  
+      ctx.body = await ctx.service.todoService.todos ctx.request.body
+           
     oneTodo: ->
       { ctx } = @
-
-      ctx.body = await ctx.service.todos.oneTodo ctx.request.body
+      
+      ctx.body = await ctx.service.todoService.oneTodo ctx.request.body
       
     addTodo: ->
       { ctx } = @
 
-      ctx.body = await ctx.service.todos.addTodo ctx.request.body
+      ctx.body = await ctx.service.todoService.addTodo ctx.request.body
       
     updateTodo: ->
       { ctx } = @
 
-      ctx.body = await ctx.service.todos.updateTodo ctx.request.body
+      ctx.body = await ctx.service.todoService.updateTodo ctx.request.body
 
     deleteTodo: ->
       { ctx } = @
 
-      ctx.body = await ctx.service.todos.deleteTodo ctx.request.body
+      ctx.body = await ctx.service.todoService.deleteTodo ctx.request.body
         
 
   return TodosController
