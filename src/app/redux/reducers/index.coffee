@@ -22,7 +22,10 @@ todos = handleActions
 
   GET_TODO_FROM_LC: (state, action) ->
     dd '从leanCloud上Mir数据到Store中'
-    
+    dd action
+    # [
+    #   action.payload.todos...
+    # ]
 
   DEL_ALL_STORE_LC: (state, action) ->
     dd '删除Store和leanCloud上的数据'

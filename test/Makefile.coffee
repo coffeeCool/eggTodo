@@ -8,11 +8,21 @@ import {
   deleteTodo
   getObjectId
   login
+  dbTest
 } from './LC_API.coffee'
+
+import {
+  LC_todos
+  LC_oneTodo
+  LC_addTodo
+  LC_updateTodo
+  LC_deleteTodo
+} from '../src/app/service/todos'
 
 target.all = ->
   dd 'ok'
 
+# leanCloud API
 target.login = ->
   login()
   .then (data) ->
@@ -40,12 +50,11 @@ target.updateTodo = ->
   .then (data) ->
     dd data
   
-
 target.deleteTodo = ->
   deleteTodo()
   .then (data) ->
     dd data
-     
+
 
   
   

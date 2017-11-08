@@ -1,30 +1,42 @@
 import actions from  '../redux/actions/index'
 import dd from 'ddeyes'
+import {
+  todos
+  oneTodo
+  addTodo
+  updateTodo
+  deleteTodo
+  dbTest
+} from '../../../test/LC_API'
 
 export default (app) ->
 
   class TodosService extends app.Service
+    
+    constructor: (ctx) ->
+      super ctx
+      @
 
-    todos: (params) ->
+    LC_todos: (params) ->
       @ctx.app.store.dispatch actions.mirTodoFromLcToStore(params)
       @ctx.app.store.getState()
       
-    oneTodo: (params) ->
+    LC_oneTodo: (params) ->
       @ctx.app.store.getState()
      
-    addTodo: (params) ->
+    LC_addTodo: (params) ->
       @ctx.app.store.dispatch actions.addTodoFromLcToStore(params)
       @ctx.app.store.getState()
      
-    updateTodo: (params) ->
+    LC_updateTodo: (params) ->
       @ctx.app.store.dispatch actions.updTodoFromLcToStore(params)
       @ctx.app.store.getState()
 
-    deleteTodo: (params) ->
+    LC_deleteTodo: (params) ->
       @ctx.app.store.dispatch actions.delTodoAboutStoreAndLc()
       @ctx.app.store.getState()
     
-    deleteAllStore: (params) ->
+    LC_deleteAllStore: (params) ->
       @ctx.app.store.dispatch actions.delAllStoreLc()
       @ctx.app.store.getState()
   
