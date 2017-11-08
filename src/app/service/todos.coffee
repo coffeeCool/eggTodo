@@ -7,7 +7,7 @@ import {
   updateTodo
   deleteTodo
   dbTest
-} from '../../../test/LC_API'
+} from '../../../test/LeanCloud_API'
 
 export default (app) ->
 
@@ -17,26 +17,26 @@ export default (app) ->
       super ctx
       @
 
-    LC_todos: (params) ->
+    todos: (params) ->
       @ctx.app.store.dispatch actions.mirTodoFromLcToStore(params)
       @ctx.app.store.getState()
       
-    LC_oneTodo: (params) ->
+    oneTodo: (params) ->
       @ctx.app.store.getState()
      
-    LC_addTodo: (params) ->
+    addTodo: (params) ->
       @ctx.app.store.dispatch actions.addTodoFromLcToStore(params)
       @ctx.app.store.getState()
      
-    LC_updateTodo: (params) ->
+    updateTodo: (params) ->
       @ctx.app.store.dispatch actions.updTodoFromLcToStore(params)
       @ctx.app.store.getState()
 
-    LC_deleteTodo: (params) ->
+    deleteTodo: (params) ->
       @ctx.app.store.dispatch actions.delTodoAboutStoreAndLc()
       @ctx.app.store.getState()
     
-    LC_deleteAllStore: (params) ->
+    deleteAllStore: (params) ->
       @ctx.app.store.dispatch actions.delAllStoreLc()
       @ctx.app.store.getState()
   

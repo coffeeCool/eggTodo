@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-export default AXIOS = (method, sessionToken, action, data) ->
+export default AXIOS = (method, sessionToken, uri, data) ->
   axios
     method: method
     headers: 
@@ -8,7 +8,7 @@ export default AXIOS = (method, sessionToken, action, data) ->
       'X-LC-Id': 'xY1g1VfwXDcyrMLI0UWUjmKe-gzGzoHsz'
       'X-LC-Key': 'rRvdD9oizDgldNbbIpgFPd1X'
       'X-LC-Session': "#{sessionToken}"
-    url: 'https://xy1g1vfw.api.lncld.net/1.1'+action
+    url: uri
     data: data
     
   .then (response) ->

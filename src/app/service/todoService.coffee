@@ -26,6 +26,16 @@ export default (app) ->
       }
       await @ctx.curl url, opts
 
+    # login
+    login: (params) ->
+      result = await @request "/login"
+      ,
+        method: 'post'
+        data: params
+        dataType: 'json'
+
+      result.data
+
     # todos
     todos: (params) ->
       result = await @request "/users"
@@ -38,7 +48,8 @@ export default (app) ->
 
     # one todo
     oneTodo: (params) ->
-      result = await @request "/users/#{params.objectId}"
+      console.log 'oneTodo params', params
+      result = await @request "/users/#{params}"
       ,
         data: params
         
@@ -68,7 +79,7 @@ export default (app) ->
 
     # delete todo
     deleteTodo: (params) ->
-      result = await @request "users/#{params.objectId}"
+      result = await @request "/users/#{params.objectId}"
       ,
         method: 'delete'
         data: params

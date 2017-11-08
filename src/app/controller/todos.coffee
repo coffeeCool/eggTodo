@@ -6,9 +6,14 @@ export default (app) ->
       super ctx
       @
 
-    todos: ->
+    login: ->
       { ctx } = @
   
+      ctx.body = await ctx.service.todoService.login ctx.request.body
+
+    todos: ->
+      { ctx } = @
+
       ctx.body = await ctx.service.todoService.todos ctx.request.body
            
     oneTodo: ->
@@ -18,7 +23,7 @@ export default (app) ->
       
     addTodo: ->
       { ctx } = @
-
+      
       ctx.body = await ctx.service.todoService.addTodo ctx.request.body
       
     updateTodo: ->

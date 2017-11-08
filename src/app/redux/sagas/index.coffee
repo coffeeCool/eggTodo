@@ -11,7 +11,7 @@ import {
   addTodo
   updateTodo
   deleteTodo
-} from '../../../../test/LC_API'
+} from '../../../../test/LeanCloud_API'
 
 { 
   MIR_TODO_FROM_LC_TO_STORE

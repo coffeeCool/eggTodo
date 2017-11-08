@@ -7,6 +7,9 @@ exports.source = {
       'X-LC-Id': 'xY1g1VfwXDcyrMLI0UWUjmKe-gzGzoHsz' # leanCloud appID
       'X-LC-Key': 'rRvdD9oizDgldNbbIpgFPd1X' # leanCloud appkEY
   }
+  localhost: {
+    uri: "http://192.168.0.192:7001"
+  }
 
   myService: {
     key2: 'value2'
