@@ -24,7 +24,6 @@ localRedux_todos = =>
     await sellp 2000
     dd store.getState()
     
-
 # one todo
 localRedux_oneTodo = =>
   store.dispatch actions.clientStoreOnetodo()

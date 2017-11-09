@@ -117,14 +117,14 @@ Async =
       throw new Error ex
     return unless newTodo
 
-    newDeleteAction = {
-      action...
-      payload: {
-        newDeleteAction...
-      }
-    }
+    # newDeleteAction = {
+    #   action...
+    #   payload: {
+    #     newTodo
+    #   }
+    # }
 
-    yield dispatch newDeleteAction
+    yield dispatch action
     , DEL_TODO_FROM_LOCAL
 
     return
