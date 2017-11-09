@@ -1,9 +1,9 @@
 import dd from 'ddeyes'
 import { createStore } from 'cfx.redux'
 import { SagaMiddleware } from 'cfx.redux-saga'
-import reducers from '../src/app/redux/reducers'
-import sagas from '../src/app/redux/sagas'
-import todoApp from '../src/app/redux/index'
+import reducers from '../src/app/serviceRedux/reducers'
+import sagas from '../src/app/serviceRedux/sagas'
+import todoApp from '../src/app/serviceRedux/index'
 
 
 export default (app) ->

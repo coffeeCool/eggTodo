@@ -1,10 +1,10 @@
 import dd from 'ddeyes'
 import { createStore } from 'cfx.redux'
 import { SagaMiddleware } from 'cfx.redux-saga'
-import actions from '../src/app/clientRedux/actions'
-import reducers from '../src/app/clientRedux/reducers'
-import sagas from '../src/app/clientRedux/sagas'
-import todoApp from '../src/app/clientRedux/index'
+import actions from '../../src/app/clientRedux/actions'
+import reducers from '../../src/app/clientRedux/reducers'
+import sagas from '../../src/app/clientRedux/sagas'
+import todoApp from '../../src/app/clientRedux/index'
 import { sellp } from './Local_API'
 
 SagaMW = new SagaMiddleware()

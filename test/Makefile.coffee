@@ -9,7 +9,7 @@ import {
   leanCloud_deleteTodo
   getObjectId
   dbTest
-} from './LeanCloud_API'
+} from './LeanCloud/LeanCloud_API'
 
 import {
   localRedux_todos
@@ -17,7 +17,7 @@ import {
   localRedux_addTodo
   localRedux_updateTodo
   localRedux_deleteTodo
-} from './LocalReducers'
+} from './Localhost/LocalReducers'
 
 target.all = ->
   dd 'ok'

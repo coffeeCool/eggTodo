@@ -1,7 +1,7 @@
 import dd from 'ddeyes'
 import axios from 'axios'
-import source from '../src/app/config/config.default.coffee'
-import AXIOS from '../src/app/axios'
+import source from '../../src/app/config/config.default.coffee'
+import AXIOS from '../../src/app/axios'
 
 leanCloud_login = ->
   AXIOS(

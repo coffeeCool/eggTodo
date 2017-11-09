@@ -42,7 +42,6 @@ todos = handleActions
   DEL_TODO_FROM_LOCAL: (state, action) ->
     []
       
-    
 , 0
 
 export default mergeReduce {
