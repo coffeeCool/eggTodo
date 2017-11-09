@@ -12,7 +12,7 @@ export default AXIOS = (method, sessionToken, uri, data) ->
     data: data
     
   .then (response) ->
-    response.data if response.status is 200
+    response.data if response.status >= 200 and response.status < 300
 
   .catch (error) ->
     dd error

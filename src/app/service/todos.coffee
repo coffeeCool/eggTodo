@@ -7,7 +7,7 @@ import {
   updateTodo
   deleteTodo
   dbTest
-} from '../../../test/LeanCloud_API'
+} from '../../../test/Local_API'
 
 export default (app) ->
 

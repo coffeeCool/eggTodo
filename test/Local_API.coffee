@@ -19,20 +19,22 @@ local_todos = ->
     []
   )
   
-local_oneTodo = (objectId) ->
-  AXIOS(
-    'GET'
-    '' 
-    source.source.localhost.uri+"/todos/#{objectId}" 
-    ["#{objectId}"]
-  )
+local_oneTodo = (params) ->
+  local_login()
+  .then (data) ->
+    AXIOS(
+      'GET'
+      '' 
+      source.source.localhost.uri+"/todos/#{data.objectId}" 
+      {objectId: data.objectId}
+    )
 
 local_addTodo = ->
   AXIOS(
     'POST'
     ''
     source.source.localhost.uri+'/todos'
-    {username:'何文涛', password:'123456'}
+    {username:'陈欢', password:'123456'}
   )
   
 local_updateTodo = (params) ->
@@ -65,10 +67,11 @@ getObjectId = (data) ->
 
   return ids
 
-dbTest = (user, store) ->
-  dd
-    db: user
-    store: store
+sellp = (time) ->
+  return new Promise (resolve, ms)->
+    setTimeout ->
+      resolve()
+    , time
 
 export {
   local_login
@@ -78,5 +81,5 @@ export {
   local_updateTodo
   local_deleteTodo
   getObjectId
-  dbTest
+  sellp
 }

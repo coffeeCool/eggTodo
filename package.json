@@ -17,6 +17,7 @@
     "egg-bin": "^4.3.3",
     "egg-validate": "^1.0.0",
     "json-server": "^0.12.0",
+    "keymirror": "^0.1.1",
     "redux-on-state-change": "^1.0.0",
     "supertest": "^3.0.0",
     "tape": "^4.8.0"

@@ -6,7 +6,6 @@ import {
 
 import constants from '../constants'
 import {
-  local_login
   local_todos
   local_oneTodo
   local_addTodo
@@ -15,28 +14,29 @@ import {
 } from '../../../../test/Local_API'
 
 { 
-  MIR_TODO_FROM_LC_TO_STORE
-  DEL_TODO_ABOUT_STORE_AND_LC
-  ADD_TODO_FROM_LC_TO_STORE
-  UPD_TODO_FROM_LC_TO_STORE
 
-  GET_TODO_FROM_LC
-  DEL_ALL_STORE_LC
-  ADD_TODO_TO_STORE_LC
-  UPD_TODO_STORE_FROM_LC
+  CLIENT_STORE_TODOS
+  CLIENT_STORE_ONETODO
+  CLIENT_STORE_ADDTODO
+  CLIENT_STORE_UPDATETODO
+  CLIENT_STORE_DELETETODO
 
-  DEL_ALL_STORE
+  GET_TODO_FROM_LOCAL
+  GET_ONETODO_FROM_LOCAL
+  ADD_TODO_FROM_LOCAL
+  UPD_TODO_FROM_LOCAL
+  DEL_TODO_FROM_LOCAL
+
 } = constants.types
 
 Async =
-  # get todos from LC
   fetch: (action) ->
     try
       todos = yield sagaEffects.call local_todos
     catch ex
       throw new Error ex
     return unless todos
-
+   
     newAction = {
       action...
       payload: {
@@ -44,31 +44,32 @@ Async =
         todos
       }
     }
-
+    
     yield dispatch newAction
-    , GET_TODO_FROM_LC
+    , GET_TODO_FROM_LOCAL
+
     return
 
-  # delete LC todo
-  delete: (action) ->
+  oneTodo: (action) ->
     try
-      newTodo = yield sagaEffects.call local_deleteTodo
-      , action.payload
+      todos = yield sagaEffects.call local_oneTodo
     catch ex
       throw new Error ex
-    return unless newTodo
-
-    newDeleteAction = {
+    return unless todos
+    
+    newAction = {
       action...
       payload: {
-        newDeleteAction...
+        action.payload...
+        todos...
       }
     }
+    
+    yield dispatch newAction
+    , GET_ONETODO_FROM_LOCAL
 
-    yield dispatch newDeleteAction
-    , DEL_ALL_STORE_LC
+    return
 
-  # add todo
   create: (action) ->
     try
       newTodo = yield sagaEffects.call local_addTodo
@@ -85,11 +86,10 @@ Async =
     }
 
     yield dispatch newCreateAction
-    , ADD_TODO_TO_STORE_LC
+    , ADD_TODO_FROM_LOCAL
 
     return
 
-  # update todo
   update: (action) ->
     try
       newTodo = yield sagaEffects.call local_updateTodo
@@ -105,36 +105,44 @@ Async =
     }
     
     yield dispatch newUpdateAction
-    , UPD_TODO_STORE_FROM_LC
+    , UPD_TODO_FROM_LOCAL
 
     return
 
-  # delete store
-  deleteAllStore: (action) ->
-    newDelAllAction = {
+  delete: (action) ->
+    try
+      newTodo = yield sagaEffects.call local_deleteTodo
+      , action.payload
+    catch ex
+      throw new Error ex
+    return unless newTodo
+
+    newDeleteAction = {
       action...
       payload: {
+        newDeleteAction...
       }
     }
-    yield dispatch newDelAllAction
-    , DEL_ALL_STORE_LC
+
+    yield dispatch newDeleteAction
+    , DEL_TODO_FROM_LOCAL
 
     return
 
 export default [
   ->
-    yield sagaEffects.takeLatest MIR_TODO_FROM_LC_TO_STORE
+    yield sagaEffects.takeLatest CLIENT_STORE_TODOS
     , Async.fetch
   ->
-    yield sagaEffects.takeLatest DEL_TODO_ABOUT_STORE_AND_LC
-    , Async.delete
+    yield sagaEffects.takeLatest CLIENT_STORE_ONETODO
+    , Async.oneTodo
   ->
-    yield sagaEffects.takeLatest ADD_TODO_FROM_LC_TO_STORE
+    yield sagaEffects.takeLatest CLIENT_STORE_ADDTODO
     , Async.create
   ->
-    yield sagaEffects.takeLatest UPD_TODO_FROM_LC_TO_STORE
+    yield sagaEffects.takeLatest CLIENT_STORE_UPDATETODO
     , Async.update
   ->
-    yield sagaEffects.takeLatest DEL_ALL_STORE
-    , Async.deleteAllStore
+    yield sagaEffects.takeLatest CLIENT_STORE_DELETETODO
+    , Async.delete
 ]

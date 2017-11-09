@@ -48,8 +48,7 @@ export default (app) ->
 
     # one todo
     oneTodo: (params) ->
-      console.log 'oneTodo params', params
-      result = await @request "/users/#{params}"
+      result = await @request "/users/#{params.objectId}"
       ,
         data: params
         

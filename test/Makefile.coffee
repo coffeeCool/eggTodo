@@ -12,21 +12,12 @@ import {
 } from './LeanCloud_API'
 
 import {
-  local_login
-  local_todos
-  local_oneTodo
-  local_addTodo
-  local_updateTodo
-  local_deleteTodo
-} from './Local_API'
-
-import {
-  todos
-  oneTodo
-  addTodo
-  updateTodo
-  deleteTodo
-} from '../src/app/service/todos'
+  localRedux_todos
+  localRedux_oneTodo
+  localRedux_addTodo
+  localRedux_updateTodo
+  localRedux_deleteTodo
+} from './LocalReducers'
 
 target.all = ->
   dd 'ok'
@@ -65,34 +56,17 @@ target.leanCloud_deleteTodo = ->
     dd data
 
 # local API
-target.local_login = ->
-  local_login()
-  .then (data) ->
-    dd data
-
 target.local_todos = ->
-  local_todos()
-  .then (data) ->
-    dd data
+  localRedux_todos()
   
 target.local_oneTodo = ->
-  local_todos()
-  .then (data) ->
-    local_oneTodo(getObjectId(data)[0])
-    .then (data) ->
-      dd data
+  localRedux_oneTodo()
 
 target.local_addTodo = ->
-  local_addTodo()
-  .then (data) ->
-    dd data
+  localRedux_addTodo()
 
 target.local_updateTodo = ->
-  local_updateTodo()
-  .then (data) ->
-    dd data
+  localRedux_updateTodo()
 
 target.local_deleteTodo = ->
-  local_deleteTodo()
-  .then (data) ->
-    dd data
+  localRedux_deleteTodo()

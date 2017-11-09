@@ -1,0 +1,17 @@
+import { toActionsTypes } from 'cfx.redux-types'
+
+export default toActionsTypes {
+
+  'CLIENT_STORE_TODOS'
+  'CLIENT_STORE_ONETODO'
+  'CLIENT_STORE_ADDTODO'
+  'CLIENT_STORE_UPDATETODO'
+  'CLIENT_STORE_DELETETODO'
+
+  'GET_TODO_FROM_LOCAL'
+  'GET_ONETODO_FROM_LOCAL'
+  'ADD_TODO_FROM_LOCAL'
+  'UPD_TODO_FROM_LOCAL'
+  'DEL_TODO_FROM_LOCAL'
+
+}
