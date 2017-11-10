@@ -6,6 +6,7 @@ import {
 
 import constants from '../constants'
 import {
+  local_login
   local_todos
   local_oneTodo
   local_addTodo
@@ -40,11 +41,10 @@ Async =
     newAction = {
       action...
       payload: {
-        action.payload...
-        todos
+        todos # 返回的todos 结构{result:[{},{},{}]}
       }
     }
-    
+
     yield dispatch newAction
     , GET_TODO_FROM_LOCAL
 
@@ -52,19 +52,19 @@ Async =
 
   oneTodo: (action) ->
     try
-      todos = yield sagaEffects.call local_oneTodo
+      todo = yield sagaEffects.call local_oneTodo
+      , action.payload.objectId
     catch ex
       throw new Error ex
-    return unless todos
-    
+    return unless todo
+
     newAction = {
       action...
       payload: {
-        action.payload...
-        todos...
+        todo... # 返回的todos 结构{}
       }
     }
-    
+
     yield dispatch newAction
     , GET_ONETODO_FROM_LOCAL
 
@@ -72,39 +72,33 @@ Async =
 
   create: (action) ->
     try
-      newTodo = yield sagaEffects.call local_addTodo
+      todo = yield sagaEffects.call local_addTodo
       , action.payload
     catch ex
       throw new Error ex
-    return unless newTodo
+    return unless todo
 
-    newCreateAction = {
+    newAction = {
       action...
       payload: {
-        newTodo...
+        todo...
       }
     }
 
-    yield dispatch newCreateAction
+    yield dispatch newAction
     , ADD_TODO_FROM_LOCAL
 
     return
 
   update: (action) ->
     try
-      newTodo = yield sagaEffects.call local_updateTodo
+      todo = yield sagaEffects.call local_updateTodo
       , action.payload
     catch ex
       throw new Error ex
-    return unless newTodo
-    newUpdateAction = {
-      action...
-      payload: {
-        newTodo
-      }
-    }
-    
-    yield dispatch newUpdateAction
+    return unless todo
+
+    yield dispatch action
     , UPD_TODO_FROM_LOCAL
 
     return
@@ -116,13 +110,6 @@ Async =
     catch ex
       throw new Error ex
     return unless newTodo
-
-    # newDeleteAction = {
-    #   action...
-    #   payload: {
-    #     newTodo
-    #   }
-    # }
 
     yield dispatch action
     , DEL_TODO_FROM_LOCAL

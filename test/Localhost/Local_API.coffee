@@ -3,59 +3,62 @@ import axios from 'axios'
 import source from '../../src/app/config/config.default.coffee'
 import AXIOS from '../../src/app/axios'
 
-local_login = ->
+local_login = (username='何文涛', password='123456')->
   AXIOS(
     'POST'
     ''
-    source.source.localhost.uri+'/login'
-    {username:'陈欢', password:'123456'}
+    "#{source.source.localhost.uri}/login"
+    {username:username, password:password}
   )
 
 local_todos = ->
   AXIOS(
     'GET'
     ''
-    source.source.localhost.uri+'/todos'
+    "#{source.source.localhost.uri}/todos"
     []
   )
-  
-local_oneTodo = (params) ->
-  local_login()
-  .then (data) ->
-    AXIOS(
-      'GET'
-      '' 
-      source.source.localhost.uri+"/todos/#{data.objectId}" 
-      {objectId: data.objectId}
-    )
 
-local_addTodo = ->
+# local_oneTodo = ->
+#   local_login()
+#   .then (data) ->
+#     AXIOS(
+#       'GET'
+#       '' 
+#       "#{source.source.localhost.uri}/todos/#{data.object}" 
+#       {objectId: data.object}
+#     )
+local_oneTodo = (objectId) ->
+  AXIOS(
+    'GET'
+    '' 
+    "#{source.source.localhost.uri}/todos/#{objectId}" 
+    {objectId: objectId}
+  )
+
+local_addTodo = (data) ->
   AXIOS(
     'POST'
     ''
-    source.source.localhost.uri+'/todos'
-    {username:'陈欢', password:'123456'}
+    "#{source.source.localhost.uri}/todos"
+    {username: data.username, password: data.password}
   )
   
-local_updateTodo = (params) ->
-  local_login()
-  .then (data) ->
-    AXIOS(
-      "PUT"
-      ''
-      source.source.localhost.uri+"/todos/#{data.objectId}" 
-      {objectId: data.objectId, sessionToken: data.sessionToken, username: '何文涛', password: '123456'}
-    )
+local_updateTodo = (data) ->
+  AXIOS(
+    "PUT"
+    ''
+    "#{source.source.localhost.uri}/todos/#{data.objectId}"
+    {objectId: data.objectId, sessionToken: data.sessionToken, username: data.username, password: data.password}
+  )
 
-local_deleteTodo = (params) ->
-  local_login()
-  .then (data) ->
-    AXIOS(
-      'DELETE'
-      ''
-      source.source.localhost.uri+"/todos/#{data.objectId}"
-      {objectId: data.objectId, sessionToken: data.sessionToken}
-    )
+local_deleteTodo = (data) ->
+  AXIOS(
+    'DELETE'
+    ''
+    "#{source.source.localhost.uri}/todos/#{data.objectId}"
+    {objectId: data.objectId, sessionToken: data.sessionToken}
+  )
 
 getObjectId = (data) ->
   ids = data.results.reduce (r, c) ->
@@ -67,11 +70,10 @@ getObjectId = (data) ->
 
   return ids
 
-sellp = (time) ->
-  return new Promise (resolve, ms)->
-    setTimeout ->
-      resolve()
-    , time
+sleep = (time) ->
+  new Promise (resolve) ->
+    setTimeout resolve, time
+    
 
 export {
   local_login
@@ -81,5 +83,5 @@ export {
   local_updateTodo
   local_deleteTodo
   getObjectId
-  sellp
+  sleep
 }

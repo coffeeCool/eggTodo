@@ -5,7 +5,8 @@ import actions from '../../src/app/clientRedux/actions'
 import reducers from '../../src/app/clientRedux/reducers'
 import sagas from '../../src/app/clientRedux/sagas'
 import todoApp from '../../src/app/clientRedux/index'
-import { sellp } from './Local_API'
+import { sleep } from './Local_API'
+import { local_login } from './Local_API'
 
 SagaMW = new SagaMiddleware()
 
@@ -20,36 +21,45 @@ SagaMW.runSagas sagas
 # todos
 localRedux_todos = =>
   store.dispatch actions.clientStoreTodos()
-  start = do ->
-    await sellp 2000
-    dd store.getState()
+  await sleep 2000
+  dd store.getState()
     
 # one todo
+# localRedux_oneTodo = =>
+#   store.dispatch actions.clientStoreOnetodo()
+#   await sleep 2000
+#   dd store.getState()
 localRedux_oneTodo = =>
-  store.dispatch actions.clientStoreOnetodo()
-  start = do ->
-    await sellp 2000
+  local_login()
+  .then (data) ->
+    store.dispatch actions.clientStoreOnetodo
+      objectId: data.objectId
+    await sleep 2000
     dd store.getState()
 
 # add todo
 localRedux_addTodo = =>
-  store.dispatch actions.clientStoreAddtodo()
-  start = do ->
-    await sellp 2000
-    dd store.getState()
+  store.dispatch actions.clientStoreAddtodo
+    username:'何S', password:'123456'
+  await sleep 2000
+  dd store.getState()
 
 # update todo
 localRedux_updateTodo =  =>
-  store.dispatch actions.clientStoreUpdatetodo()
-  start = do ->
-    await sellp 2000
+  local_login()
+  .then (data) ->
+    store.dispatch actions.clientStoreUpdatetodo
+      objectId: data.objectId, sessionToken: data.sessionToken, username: '何文涛', password: '123456'
+    await sleep 2000
     dd store.getState()
 
 # delete todo
-localRedux_deleteTodo = ()=>
-  store.dispatch actions.clientStoreDeletetodo()
-  start = do ->
-    await sellp 2000
+localRedux_deleteTodo = =>
+  local_login()
+  .then (data) ->
+    store.dispatch actions.clientStoreDeletetodo
+      objectId: data.objectId, sessionToken: data.sessionToken
+    await sleep 2000
     dd store.getState()
 
 export {
