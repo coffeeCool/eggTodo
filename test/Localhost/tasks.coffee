@@ -1,12 +1,12 @@
 import dd from 'ddeyes'
 import { createStore } from 'cfx.redux'
 import { SagaMiddleware } from 'cfx.redux-saga'
-import actions from '../../src/app/clientRedux/actions'
-import reducers from '../../src/app/clientRedux/reducers'
-import sagas from '../../src/app/clientRedux/sagas'
-import todoApp from '../../src/app/clientRedux/index'
-import { sleep } from './Local_API'
-import { local_login } from './Local_API'
+import actions from './redux/actions'
+import reducers from './redux/reducers'
+import sagas from './redux/sagas'
+import todoApp from './redux/index'
+import { sleep } from './service'
+import { local_login } from './service'
 
 SagaMW = new SagaMiddleware()
 
@@ -23,12 +23,8 @@ localRedux_todos = =>
   store.dispatch actions.clientStoreTodos()
   await sleep 2000
   dd store.getState()
-    
+
 # one todo
-# localRedux_oneTodo = =>
-#   store.dispatch actions.clientStoreOnetodo()
-#   await sleep 2000
-#   dd store.getState()
 localRedux_oneTodo = =>
   local_login()
   .then (data) ->
@@ -45,11 +41,11 @@ localRedux_addTodo = =>
   dd store.getState()
 
 # update todo
-localRedux_updateTodo =  =>
+localRedux_updateTodo = =>
   local_login()
   .then (data) ->
     store.dispatch actions.clientStoreUpdatetodo
-      objectId: data.objectId, sessionToken: data.sessionToken, username: '何文涛', password: '123456'
+      objectId: data.objectId, sessionToken: data.sessionToken, username: '何S', password: '123456'
     await sleep 2000
     dd store.getState()
 

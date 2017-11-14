@@ -4,7 +4,12 @@
     "author": "hewentao <hewentaowx@gmail.com>",
     "description": "egg todo demo",
     "private": true,
+    "scripts": {
+        "start": "yarn run egg-bin dev",
+        "jsonServer": "json-server --watch --port 7001 todo.json"
+    },
     "dependencies": {
+        "async": "^2.6.0",
         "axios": "^0.16.2",
         "cfx.redux": "^0.0.0",
         "cfx.redux-actions": "^0.0.0",
@@ -19,6 +24,7 @@
         "json-server": "^0.12.0",
         "keymirror": "^0.1.1",
         "redux-on-state-change": "^1.0.0",
+        "step": "^1.0.0",
         "supertest": "^3.0.0",
         "tape": "^4.8.0"
     },

@@ -12,7 +12,7 @@ import {
   local_addTodo
   local_updateTodo
   local_deleteTodo
-} from '../../../../test/Localhost/Local_API'
+} from '../../../../test/Localhost/service'
 
 { 
   MIR_TODO_FROM_LC_TO_STORE

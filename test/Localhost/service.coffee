@@ -3,12 +3,12 @@ import axios from 'axios'
 import source from '../../src/app/config/config.default.coffee'
 import AXIOS from '../../src/app/axios'
 
-local_login = (username='何文涛', password='123456')->
+local_login = (username='何S', password='123456') ->
   AXIOS(
     'POST'
     ''
     "#{source.source.localhost.uri}/login"
-    {username:username, password:password}
+    {username: username, password: password}
   )
 
 local_todos = ->
@@ -19,15 +19,6 @@ local_todos = ->
     []
   )
 
-# local_oneTodo = ->
-#   local_login()
-#   .then (data) ->
-#     AXIOS(
-#       'GET'
-#       '' 
-#       "#{source.source.localhost.uri}/todos/#{data.object}" 
-#       {objectId: data.object}
-#     )
 local_oneTodo = (objectId) ->
   AXIOS(
     'GET'
@@ -41,24 +32,49 @@ local_addTodo = (data) ->
     'POST'
     ''
     "#{source.source.localhost.uri}/todos"
-    {username: data.username, password: data.password}
+    data
   )
   
 local_updateTodo = (data) ->
   AXIOS(
     "PUT"
-    ''
+    data.sessionToken
     "#{source.source.localhost.uri}/todos/#{data.objectId}"
-    {objectId: data.objectId, sessionToken: data.sessionToken, username: data.username, password: data.password}
+    data
   )
 
 local_deleteTodo = (data) ->
   AXIOS(
     'DELETE'
-    ''
+    data.sessionToken
     "#{source.source.localhost.uri}/todos/#{data.objectId}"
-    {objectId: data.objectId, sessionToken: data.sessionToken}
+    data
   )
+
+js_local_oneTodo = (id) ->
+  AXIOS(
+    'GET'
+    '' 
+    "#{source.source.localhost.uri}/todos/#{id}" 
+    {id: id}
+  )
+
+js_local_updateTodo = (data) ->
+  AXIOS(
+    'PUT'
+    '' 
+    "#{source.source.localhost.uri}/todos/#{data.id}" 
+    data
+  )
+
+js_local_deleteTodo = (id) ->
+  AXIOS(
+    'DELETE'
+    '' 
+    "#{source.source.localhost.uri}/todos/#{id}" 
+    []
+  )
+
 
 getObjectId = (data) ->
   ids = data.results.reduce (r, c) ->
@@ -73,7 +89,6 @@ getObjectId = (data) ->
 sleep = (time) ->
   new Promise (resolve) ->
     setTimeout resolve, time
-    
 
 export {
   local_login
@@ -82,6 +97,9 @@ export {
   local_addTodo
   local_updateTodo
   local_deleteTodo
+  js_local_oneTodo
+  js_local_updateTodo
+  js_local_deleteTodo
   getObjectId
   sleep
 }

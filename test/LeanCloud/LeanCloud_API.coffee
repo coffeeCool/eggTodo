@@ -3,57 +3,53 @@ import axios from 'axios'
 import source from '../../src/app/config/config.default.coffee'
 import AXIOS from '../../src/app/axios'
 
-leanCloud_login = ->
+leanCloud_login = (username='何S', password='123456')->
   AXIOS(
     'POST'
     ''
-    source.source.leanCloud.baseUrl+'/login'
-    {username:'何文涛', password:'123456'}
+    "#{source.source.leanCloud.baseUrl}/login"
+    {username: username, password: password}
   )
 
 leanCloud_todos = ->
   AXIOS(
     'GET'
     ''
-    source.source.leanCloud.baseUrl+'/users'
+    "#{source.source.leanCloud.baseUrl}/users"
     []
   )
   
-leanCloud_oneTodo = (objectId) ->
+leanCloud_oneTodo = (data) ->
   AXIOS(
     'GET'
     '' 
-    source.source.leanCloud.baseUrl+"/users/#{objectId}" 
-    []
+    "#{source.source.leanCloud.baseUrl}/users/#{data.objectId}"
+    data
   )
 
-leanCloud_addTodo = ->
+leanCloud_addTodo = (data) ->
   AXIOS(
     'POST'
     ''
-    source.source.leanCloud.baseUrl+'/users'
-    {username:'何文涛', password:'123456'}
+    "#{source.source.leanCloud.baseUrl}/users"
+    data
   )
   
-leanCloud_updateTodo = (params) ->
-  login()
-  .then (data) ->
-    AXIOS(
-      "PUT"
-      data.sessionToken
-      source.source.leanCloud.baseUrl+"/users/#{data.objectId}" 
-      {username:'何文涛', password:'123456'}
-    )
+leanCloud_updateTodo = (data) ->
+  AXIOS(
+    "PUT"
+    data.sessionToken
+    "#{source.source.leanCloud.baseUrl}/users/#{data.objectId}"
+    data
+  )
 
-leanCloud_deleteTodo = (params) ->
-  login()
-  .then (data) ->
-    AXIOS(
-      'DELETE', 
-      data.sessionToken, 
-      source.source.leanCloud.baseUrl+"/users/#{data.objectId}"
-      []
-    )
+leanCloud_deleteTodo = (data) ->
+  AXIOS(
+    'DELETE'
+    data.sessionToken
+    "#{source.source.leanCloud.baseUrl}/users/#{data.objectId}"
+    data
+  )
 
 getObjectId = (data) ->
   ids = data.results.reduce (r, c) ->
